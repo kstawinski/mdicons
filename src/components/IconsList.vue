@@ -2,8 +2,8 @@
   <v-row class="ma-3 d-flex">
     <v-col cols="3">
       <!-- Picked icon preview -->
-      <span class="rounded-circle d-inline-block text-center">
-        <v-icon size="36" color="primary">{{ `mdi-${pickedIcon.name}` }}</v-icon>
+      <span class="rounded-circle d-inline-block text-center grey lighten-5 pa-5">
+        <v-icon size="76" color="secondary">{{ `mdi-${pickedIcon.name}` }}</v-icon>
       </span>
 
       <!-- Name -->
