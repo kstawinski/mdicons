@@ -12,9 +12,10 @@
       </div>
 
       <!-- Code -->
-      <code>
-        import { {{ `mdi-${pickedIcon.name}` }} } from '@mdi/js';
-      </code>
+      <prism
+        language="javascript"
+        :code="`import { mdi-${this.pickedIcon.name} } from '@mdi/js';`"
+      ></prism>
 
       <!-- Details -->
       <div>
@@ -54,6 +55,7 @@
 </template>
 
 <script lang="ts">
+import 'prismjs/themes/prism.css';
 import Icon from '@/components/Icon.vue';
 import Vue from 'vue';
 import iconsJSON from '../data/icons.json';
