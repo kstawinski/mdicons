@@ -1,16 +1,21 @@
 <template>
-  <v-container fluid>
-    <div v-for='(icon, i) in icons' :key='i'>
-      <v-icon>{{ `mdi-${icon.name}` }}</v-icon>
-    </div>
-  </v-container>
+  <v-row class="ma-3">
+    <span v-for='(icon, i) in icons' :key='i'>
+      <Icon :name="icon.name" />
+    </span>
+  </v-row>
 </template>
 
 <script lang='ts'>
+import Icon from '@/components/Icon.vue';
 import Vue from 'vue';
 
 export default Vue.extend({
   name: 'IconsList',
+
+  components: {
+    Icon,
+  },
 
   data: () => ({
     icons: [
