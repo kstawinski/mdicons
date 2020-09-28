@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-bottom-sheet v-model="sheet">
-      <v-sheet class="pa-4">
+      <v-sheet class="pa-4" v-if="sheet">
         <div class="d-flex">
           <!-- Picked icon preview -->
           <div class="pa-5">
@@ -22,7 +22,7 @@
             <!-- Code -->
             <prism
               language="javascript"
-              :code="`import { mdi-${this.pickedIcon.name} } from '@mdi/js';`"
+              :code="`import { mdi${formatNameToCode(this.pickedIcon.name)} } from '@mdi/js';`"
             ></prism>
 
             <!-- Buttons -->
@@ -117,6 +117,9 @@ export default Vue.extend({
       this.clipboardCopy(text);
       this.snackbar.value = this.pickedIcon.name;
       this.snackbar.isVisible = true;
+    },
+    formatNameToCode(name: string) {
+      return name.split('-').map((text) => text.charAt(0).toUpperCase() + text.slice(1)).join('');
     },
   },
 });
