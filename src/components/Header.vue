@@ -1,18 +1,9 @@
 <template>
-  <v-app-bar
-    app
-    color="primary"
-    dark
-    flat
-  >
-    <v-toolbar-title>Material Design Icons</v-toolbar-title>
-
+  <v-app-bar app color="primary" dark flat>
+    <v-toolbar-title>{{ title }}</v-toolbar-title>
     <v-spacer></v-spacer>
 
-    <v-menu
-      transition="slide-y-transition"
-      bottom
-    >
+    <v-menu transition="slide-y-transition" bottom :close-on-content-click="true">
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           icon
@@ -22,9 +13,14 @@
           <v-icon>mdi-dots-vertical</v-icon>
         </v-btn>
       </template>
-      <v-list>
+      <v-list v-for="(button, i) in buttons" :key="i" dense>
         <v-list-item>
-          <v-list-item-title>Random icon</v-list-item-title>
+          <v-list-item-icon>
+            <v-icon>{{ button.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>{{ button.name }}</v-list-item-title>
+          </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -36,5 +32,13 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'Header',
+
+  data: () => ({
+    title: 'Material Design Icons',
+    buttons: [
+      { name: 'Random icon', icon: 'mdi-shuffle' },
+      { name: 'Random icon', icon: 'mdi-shuffle' },
+    ],
+  }),
 });
 </script>
