@@ -8,7 +8,7 @@
 
       <!-- Name -->
       <span class="mt-2">
-        {{ `mdi-${pickedIcon.name}` }}
+        {{ `${pickedIcon.name}` }}
       </span>
 
       <!-- Code -->
@@ -31,7 +31,7 @@
         </v-btn>
 
         <!-- Copy name -->
-        <v-btn block text elevation="0" @click="copyToClipboard(`mdi-${pickedIcon.name}`)">
+        <v-btn block text elevation="0" @click="copyToClipboard(`${pickedIcon.name}`)">
           <v-icon>mdi-clipboard-text-outline</v-icon>
           <span class="ml-2">Copy name</span>
         </v-btn>
@@ -39,7 +39,7 @@
 
       <!-- Snackbar -->
       <v-snackbar v-model="snackbar.isVisible" :timeout="snackbar.timeout" left class="ml-4 pb-4">
-        <b>mdi-{{ snackbar.value }}</b> {{ snackbar.text }}
+        <b>{{ snackbar.value }}</b> {{ snackbar.text }}
       </v-snackbar>
     </v-col>
     <v-col cols="9">
