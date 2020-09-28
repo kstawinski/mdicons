@@ -1,21 +1,22 @@
 <template>
   <v-row>
     <v-bottom-sheet v-model="sheet">
-      <v-sheet class="pa-4 ma-auto">
+      <v-sheet class="pa-4">
         <div class="d-flex">
           <!-- Picked icon preview -->
           <div class="pa-5">
             <v-icon size="76" color="secondary">{{ `mdi-${pickedIcon.name}` }}</v-icon>
           </div>
 
+          <!-- Details -->
           <div>
             <!-- Name -->
             <span
               class="text-h6 secondary--text"
               style="cursor: pointer;"
-              @click="copyToClipboard(`${pickedIcon.name}`)"
+              @click="this.clipboardCopy(this.pickedIcon.name)"
             >
-              {{ `${pickedIcon.name}` }}
+              {{ pickedIcon.name }}
             </span>
 
             <!-- Code -->
@@ -24,7 +25,7 @@
               :code="`import { mdi-${this.pickedIcon.name} } from '@mdi/js';`"
             ></prism>
 
-            <!-- Details -->
+            <!-- Buttons -->
             <div>
               <div>
                 <!-- Link to MDI -->
@@ -40,10 +41,10 @@
                   <v-icon class="ml-2" size="18">mdi-open-in-new</v-icon>
                 </v-btn>
 
-                <!-- Copy name -->
+                <!-- Code copy button -->
                 <v-btn
                   elevation="1"
-                  @click="copyToClipboard(`code here`)"
+                  @click="copyToClipboard('code here')"
                   text
                   color="secondary"
                 >
@@ -52,12 +53,11 @@
                 </v-btn>
               </div>
 
-              <div class="text--secondary mt-1">
-                <small>
-                  {{ pickedIcon.codepoint }} ·
-                  by {{ pickedIcon.author }} (v{{ pickedIcon.version }})
-                </small>
-              </div>
+              <!-- Footer -->
+              <small class="text--secondary mt-1">
+                {{ pickedIcon.codepoint }} ·
+                by {{ pickedIcon.author }} (v{{ pickedIcon.version }})
+              </small>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
         </v-snackbar>
       </v-sheet>
     </v-bottom-sheet>
-    <v-row class="ma-3">
+    <v-row class="ma-8">
       <Icon
         v-for="(icon, i) in icons"
         :key="i"
@@ -113,7 +113,7 @@ export default Vue.extend({
       this.pickedIcon = iconObject;
       this.sheet = true;
     },
-    copyToClipboard(text: any) {
+    copyToClipboard(text: string) {
       this.clipboardCopy(text);
       this.snackbar.value = this.pickedIcon.name;
       this.snackbar.isVisible = true;
