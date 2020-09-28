@@ -36,6 +36,11 @@
           <span class="ml-2">Copy name</span>
         </v-btn>
       </div>
+
+      <!-- Snackbar -->
+      <v-snackbar v-model="snackbar.isVisible" :timeout="snackbar.timeout" left class="ml-4 pb-4">
+        <b>mdi-{{ snackbar.value }}</b> {{ snackbar.text }}
+      </v-snackbar>
     </v-col>
     <v-col cols="9">
       <Icon
@@ -63,6 +68,12 @@ export default Vue.extend({
   data: () => ({
     icons: iconsJSON.slice(0, 100),
     pickedIcon: {},
+    snackbar: {
+      isVisible: false,
+      text: 'copied successfully.',
+      value: undefined,
+      timeout: 3000,
+    },
   }),
 
   methods: {
@@ -71,6 +82,8 @@ export default Vue.extend({
     },
     copyToClipboard(text: any) {
       this.clipboardCopy(text);
+      this.snackbar.value = this.pickedIcon.name;
+      this.snackbar.isVisible = true;
     },
   },
 });
