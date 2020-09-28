@@ -31,7 +31,7 @@
         </v-btn>
 
         <!-- Copy name -->
-        <v-btn block text elevation="0">
+        <v-btn block text elevation="0" @click="copyToClipboard(`mdi-${pickedIcon.name}`)">
           <v-icon>mdi-clipboard-text-outline</v-icon>
           <span class="ml-2">Copy name</span>
         </v-btn>
@@ -68,6 +68,9 @@ export default Vue.extend({
   methods: {
     pickIcon(iconObject: object) {
       this.pickedIcon = iconObject;
+    },
+    copyToClipboard(text: any) {
+      this.clipboardCopy(text);
     },
   },
 });
