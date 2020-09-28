@@ -5,13 +5,13 @@
         <div class="d-flex">
           <!-- Picked icon preview -->
           <div class="pa-5">
-            <v-icon size="76" color="blue-grey darken-4">{{ `mdi-${pickedIcon.name}` }}</v-icon>
+            <v-icon size="76" color="secondary">{{ `mdi-${pickedIcon.name}` }}</v-icon>
           </div>
 
           <div>
             <!-- Name -->
             <span
-              class="text-h6 blue-grey--text text--darken-4"
+              class="text-h6 secondary--text"
               style="cursor: pointer;"
               @click="copyToClipboard(`${pickedIcon.name}`)"
             >
@@ -33,6 +33,8 @@
                   elevation="1"
                   target="_blank"
                   class="mr-2"
+                  text
+                  color="secondary"
                 >
                   <span>Visit MDI</span>
                   <v-icon class="ml-2" size="18">mdi-open-in-new</v-icon>
@@ -42,6 +44,8 @@
                 <v-btn
                   elevation="1"
                   @click="copyToClipboard(`code here`)"
+                  text
+                  color="secondary"
                 >
                   <span>Copy code</span>
                   <v-icon class="ml-2" size="18">mdi-clipboard-text-outline</v-icon>
