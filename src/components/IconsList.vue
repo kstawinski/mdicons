@@ -7,9 +7,9 @@
       </span>
 
       <!-- Name -->
-      <span class="mt-2">
+      <div class="mt-2 mb-4 text-h6">
         {{ `${pickedIcon.name}` }}
-      </span>
+      </div>
 
       <!-- Code -->
       <code>
