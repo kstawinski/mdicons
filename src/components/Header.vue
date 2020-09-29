@@ -3,6 +3,15 @@
     <v-toolbar-title>{{ title }}</v-toolbar-title>
     <v-spacer></v-spacer>
 
+    <div class="d-flex mr-2">
+      <v-icon>mdi-theme-light-dark</v-icon>
+      <v-checkbox
+        v-model="$vuetify.theme.dark"
+        color="white"
+        hide-details
+      ></v-checkbox>
+    </div>
+
     <v-menu transition="slide-y-transition" bottom :close-on-content-click="true">
       <template v-slot:activator="{ on, attrs }">
         <v-btn
