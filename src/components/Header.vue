@@ -13,6 +13,7 @@
           <v-icon>mdi-theme-light-dark</v-icon>
           <v-checkbox
             v-model="$vuetify.theme.dark"
+            @click="setDarkMode"
             color="white"
             hide-details
           ></v-checkbox>
@@ -58,5 +59,11 @@ export default Vue.extend({
       { name: 'Random icon', icon: 'mdi-shuffle' },
     ],
   }),
+
+  methods: {
+    setDarkMode() {
+      localStorage.setItem('darkmode', this.$vuetify.theme.dark.toString());
+    },
+  },
 });
 </script>
