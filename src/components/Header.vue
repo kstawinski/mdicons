@@ -3,6 +3,7 @@
     <v-toolbar-title>{{ title }}</v-toolbar-title>
     <v-spacer></v-spacer>
 
+    <v-icon>mdi-theme-light-dark</v-icon>
     <v-tooltip bottom>
       <template v-slot:activator="{ on, attrs }">
         <div
@@ -10,7 +11,6 @@
           v-bind="attrs"
           v-on="on"
         >
-          <v-icon>mdi-theme-light-dark</v-icon>
           <v-checkbox
             v-model="$vuetify.theme.dark"
             @click="setDarkMode"
