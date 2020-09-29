@@ -32,8 +32,13 @@
           <v-icon>mdi-dots-vertical</v-icon>
         </v-btn>
       </template>
-      <v-list v-for="(button, i) in buttons" :key="i" dense style="padding: 3px;">
-        <v-list-item :link="true" @click="emitClick(button.emitName)">
+      <v-list dense style="padding: 3px;">
+        <v-list-item
+          v-for="(button, i) in buttons"
+          :key="i"
+          :link="true"
+          @click="emitClick(button.emitName)"
+        >
           <v-list-item-icon>
             <v-icon>{{ button.icon }}</v-icon>
           </v-list-item-icon>
