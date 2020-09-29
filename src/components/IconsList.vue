@@ -78,6 +78,7 @@
 import '@/assets/prism.css';
 import Icon from '@/components/Icon.vue';
 import Vue from 'vue';
+import eventBus from '../plugins/eventBus';
 import iconsJSON from '../data/icons.json';
 
 export default Vue.extend({
@@ -101,6 +102,12 @@ export default Vue.extend({
     formatNameToCode(name: string) {
       return name.split('-').map((text) => text.charAt(0).toUpperCase() + text.slice(1)).join('');
     },
+  },
+
+  created() {
+    eventBus.$on('random', () => {
+      console.log('losuj...');
+    });
   },
 });
 </script>
