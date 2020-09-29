@@ -23,6 +23,7 @@
               <prism
                 language="javascript"
                 :code="`import { mdi${formatNameToCode(pickedIcon.name)} } from '@mdi/js';`"
+                :style="$vuetify.theme.dark ? 'background-color: #101010;' : ''"
               ></prism>
 
               <!-- Icon buttons -->
