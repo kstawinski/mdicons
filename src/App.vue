@@ -24,5 +24,22 @@ export default Vue.extend({
   data: () => ({
     //
   }),
+
+  methods: {
+    // Check that user selected dark theme
+    isDarkTheme() {
+      const isDark = localStorage.getItem('darkmode');
+
+      if (isDark === 'true') {
+        this.$vuetify.theme.dark = true;
+      } else {
+        this.$vuetify.theme.dark = false;
+      }
+    },
+  },
+
+  mounted() {
+    this.isDarkTheme();
+  },
 });
 </script>
