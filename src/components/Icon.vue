@@ -1,5 +1,5 @@
 <template>
-  <v-btn icon large class="ma-1" tile @click="$emit('clicked')">
+  <v-btn icon large class="ma-1" @click="$emit('clicked')">
     <v-icon>{{ `mdi-${name}` }}</v-icon>
   </v-btn>
 </template>
