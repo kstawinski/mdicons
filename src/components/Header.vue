@@ -32,8 +32,8 @@
           <v-icon>mdi-dots-vertical</v-icon>
         </v-btn>
       </template>
-      <v-list v-for="(button, i) in buttons" :key="i" dense>
-        <v-list-item>
+      <v-list v-for="(button, i) in buttons" :key="i" dense style="padding: 3px;">
+        <v-list-item link="#" @click="emitClick(button.emitName)">
           <v-list-item-icon>
             <v-icon>{{ button.icon }}</v-icon>
           </v-list-item-icon>
@@ -48,6 +48,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import eventBus from '../plugins/eventBus';
 
 export default Vue.extend({
   name: 'Header',
@@ -55,14 +56,16 @@ export default Vue.extend({
   data: () => ({
     title: 'Material Design Icons',
     buttons: [
-      { name: 'Random icon', icon: 'mdi-shuffle' },
-      { name: 'Random icon', icon: 'mdi-shuffle' },
+      { name: 'Random icon', icon: 'mdi-shuffle', emitName: 'random' },
     ],
   }),
 
   methods: {
     setDarkMode() {
       localStorage.setItem('darkmode', this.$vuetify.theme.dark.toString());
+    },
+    emitClick(name: string) {
+      eventBus.$emit(name);
     },
   },
 });
