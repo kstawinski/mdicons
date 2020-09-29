@@ -3,7 +3,7 @@
     <v-toolbar-title>{{ title }}</v-toolbar-title>
     <v-spacer></v-spacer>
 
-    <v-icon>mdi-theme-light-dark</v-icon>
+    <v-icon class="mr-1" style="opacity: .8;">mdi-theme-light-dark</v-icon>
     <v-tooltip bottom>
       <template v-slot:activator="{ on, attrs }">
         <div
