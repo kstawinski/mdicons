@@ -57,6 +57,7 @@ export default Vue.extend({
     title: 'Material Design Icons',
     buttons: [
       { name: 'Random icon', icon: 'mdi-shuffle', emitName: 'random' },
+      { name: 'About', icon: 'mdi-information-outline', emitName: 'about' },
     ],
   }),
 
