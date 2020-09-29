@@ -14,7 +14,6 @@
             <header
               class="text-h6 secondary--text"
               style="cursor: pointer;"
-              @click="this.clipboardCopy(this.pickedIcon.name)"
             >
               {{ pickedIcon.name }}
             </header>
@@ -23,7 +22,7 @@
               <!-- Icon code -->
               <prism
                 language="javascript"
-                :code="`import { mdi${formatNameToCode(this.pickedIcon.name)} } from '@mdi/js';`"
+                :code="`import { mdi${formatNameToCode(pickedIcon.name)} } from '@mdi/js';`"
               ></prism>
 
               <!-- Icon buttons -->
@@ -44,7 +43,6 @@
                 <!-- Button: Copy code -->
                 <v-btn
                   elevation="1"
-                  @click="copyToClipboard('code here')"
                   text
                   color="secondary"
                 >
@@ -61,15 +59,6 @@
             </footer>
           </div>
         </article>
-
-        <!-- Snackbar -->
-        <v-snackbar
-          v-model="snackbar.isVisible"
-          :timeout="snackbar.timeout"
-          class="mr-4 pb-4"
-        >
-          <b>{{ snackbar.value }}</b> {{ snackbar.text }}
-        </v-snackbar>
       </v-sheet>
     </v-bottom-sheet>
 
@@ -101,23 +90,12 @@ export default Vue.extend({
     icons: iconsJSON.slice(0, 100),
     pickedIcon: {},
     sheet: false,
-    snackbar: {
-      isVisible: false,
-      text: 'copied successfully.',
-      value: undefined,
-      timeout: 3000,
-    },
   }),
 
   methods: {
     pickIcon(iconObject: object) {
       this.pickedIcon = iconObject;
       this.sheet = true;
-    },
-    copyToClipboard(text: string) {
-      this.clipboardCopy(text);
-      this.snackbar.value = this.pickedIcon.name;
-      this.snackbar.isVisible = true;
     },
     formatNameToCode(name: string) {
       return name.split('-').map((text) => text.charAt(0).toUpperCase() + text.slice(1)).join('');
