@@ -32,8 +32,8 @@
           <v-icon>mdi-dots-vertical</v-icon>
         </v-btn>
       </template>
-      <v-list v-for="(button, i) in buttons" :key="i" dense>
-        <v-list-item>
+      <v-list v-for="(button, i) in buttons" :key="i" dense style="padding: 3px;">
+        <v-list-item link="#">
           <v-list-item-icon>
             <v-icon>{{ button.icon }}</v-icon>
           </v-list-item-icon>
@@ -55,7 +55,6 @@ export default Vue.extend({
   data: () => ({
     title: 'Material Design Icons',
     buttons: [
-      { name: 'Random icon', icon: 'mdi-shuffle' },
       { name: 'Random icon', icon: 'mdi-shuffle' },
     ],
   }),
