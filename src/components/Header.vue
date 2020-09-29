@@ -3,14 +3,23 @@
     <v-toolbar-title>{{ title }}</v-toolbar-title>
     <v-spacer></v-spacer>
 
-    <div class="d-flex mr-2">
-      <v-icon>mdi-theme-light-dark</v-icon>
-      <v-checkbox
-        v-model="$vuetify.theme.dark"
-        color="white"
-        hide-details
-      ></v-checkbox>
-    </div>
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on, attrs }">
+        <div
+          class="d-flex mr-2"
+          v-bind="attrs"
+          v-on="on"
+        >
+          <v-icon>mdi-theme-light-dark</v-icon>
+          <v-checkbox
+            v-model="$vuetify.theme.dark"
+            color="white"
+            hide-details
+          ></v-checkbox>
+        </div>
+      </template>
+      <span>{{ $vuetify.theme.dark ? 'Disable' : 'Enable' }} dark mode</span>
+    </v-tooltip>
 
     <v-menu transition="slide-y-transition" bottom :close-on-content-click="true">
       <template v-slot:activator="{ on, attrs }">
