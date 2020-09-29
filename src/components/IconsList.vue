@@ -102,11 +102,21 @@ export default Vue.extend({
     formatNameToCode(name: string) {
       return name.split('-').map((text) => text.charAt(0).toUpperCase() + text.slice(1)).join('');
     },
+    getRandomInt(paramMin: number, paramMax: number) {
+      const min = Math.ceil(paramMin);
+      const max = Math.floor(paramMax);
+      return Math.floor(Math.random() * (max - min)) + min;
+    },
+    randomIcon() {
+      const randomInt = this.getRandomInt(0, this.icons.length);
+      this.pickIcon(this.icons[randomInt]);
+    },
   },
 
   created() {
+    // On click 'Random icon' item in dropdown menu
     eventBus.$on('random', () => {
-      console.log('losuj...');
+      this.randomIcon();
     });
   },
 });
