@@ -12,6 +12,7 @@
 import Vue from 'vue';
 import Header from '@/components/Header.vue';
 import IconsList from '@/components/IconsList.vue';
+import eventBus from './plugins/eventBus';
 
 export default Vue.extend({
   name: 'App',
@@ -41,6 +42,13 @@ export default Vue.extend({
 
   mounted() {
     this.isDarkTheme();
+  },
+
+  created() {
+    // On click 'About' item in dropdown menu
+    eventBus.$on('about', () => {
+      console.log('open about page');
+    });
   },
 });
 </script>
