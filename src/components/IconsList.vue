@@ -119,5 +119,14 @@ export default Vue.extend({
       this.randomIcon();
     });
   },
+
+  mounted() {
+    window.addEventListener('keyup', (event) => {
+      // On space click
+      if (event.keyCode === 32) {
+        this.randomIcon();
+      }
+    });
+  },
 });
 </script>
