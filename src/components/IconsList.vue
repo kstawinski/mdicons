@@ -2,33 +2,33 @@
   <v-row>
     <v-bottom-sheet v-model="sheet">
       <v-sheet class="pa-4" v-if="sheet">
-        <div class="d-flex">
-          <!-- Picked icon preview -->
+        <article class="d-flex">
+          <!-- Icon preview -->
           <div class="pa-5">
             <v-icon size="76" color="secondary">{{ `mdi-${pickedIcon.name}` }}</v-icon>
           </div>
 
-          <!-- Details -->
+          <!-- Icon details -->
           <div>
-            <!-- Name -->
-            <span
+            <!-- Icon name -->
+            <header
               class="text-h6 secondary--text"
               style="cursor: pointer;"
               @click="this.clipboardCopy(this.pickedIcon.name)"
             >
               {{ pickedIcon.name }}
-            </span>
+            </header>
 
-            <!-- Code -->
-            <prism
-              language="javascript"
-              :code="`import { mdi${formatNameToCode(this.pickedIcon.name)} } from '@mdi/js';`"
-            ></prism>
+            <main>
+              <!-- Icon code -->
+              <prism
+                language="javascript"
+                :code="`import { mdi${formatNameToCode(this.pickedIcon.name)} } from '@mdi/js';`"
+              ></prism>
 
-            <!-- Buttons -->
-            <div>
-              <div>
-                <!-- Link to MDI -->
+              <!-- Icon buttons -->
+              <div class="mb-2">
+                <!-- Button: Visit MDI -->
                 <v-btn
                   :href="`https://materialdesignicons.com/icon/${pickedIcon.name}`"
                   elevation="1"
@@ -41,7 +41,7 @@
                   <v-icon class="ml-2" size="18">mdi-open-in-new</v-icon>
                 </v-btn>
 
-                <!-- Code copy button -->
+                <!-- Button: Copy code -->
                 <v-btn
                   elevation="1"
                   @click="copyToClipboard('code here')"
@@ -52,15 +52,15 @@
                   <v-icon class="ml-2" size="18">mdi-clipboard-text-outline</v-icon>
                 </v-btn>
               </div>
+            </main>
 
-              <!-- Footer -->
-              <small class="text--secondary mt-1">
-                {{ pickedIcon.codepoint }} ·
-                by {{ pickedIcon.author }} (v{{ pickedIcon.version }})
-              </small>
-            </div>
+            <!-- Icon footer -->
+            <footer class="text--secondary caption">
+              {{ pickedIcon.codepoint }} ·
+              by {{ pickedIcon.author }} (v{{ pickedIcon.version }})
+            </footer>
           </div>
-        </div>
+        </article>
 
         <!-- Snackbar -->
         <v-snackbar
@@ -72,6 +72,7 @@
         </v-snackbar>
       </v-sheet>
     </v-bottom-sheet>
+
     <v-row class="ma-8">
       <Icon
         v-for="(icon, i) in icons"
