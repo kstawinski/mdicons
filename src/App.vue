@@ -4,6 +4,7 @@
 
     <v-main>
       <IconsList />
+      <About :state="showAbout" />
     </v-main>
   </v-app>
 </template>
@@ -12,6 +13,7 @@
 import Vue from 'vue';
 import Header from '@/components/Header.vue';
 import IconsList from '@/components/IconsList.vue';
+import About from '@/components/About.vue';
 import eventBus from './plugins/eventBus';
 
 export default Vue.extend({
@@ -20,10 +22,11 @@ export default Vue.extend({
   components: {
     Header,
     IconsList,
+    About,
   },
 
   data: () => ({
-    //
+    showAbout: false,
   }),
 
   methods: {
@@ -47,7 +50,11 @@ export default Vue.extend({
   created() {
     // On click 'About' item in dropdown menu
     eventBus.$on('about', () => {
-      console.log('open about page');
+      // This spaghetti code solve problem with opening dialog a second time
+      if (this.showAbout === true) {
+        this.showAbout = false;
+      }
+      this.showAbout = true;
     });
   },
 });
