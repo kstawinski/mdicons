@@ -63,9 +63,9 @@
       </v-sheet>
     </v-bottom-sheet>
 
-    <v-row class="ma-8">
+    <v-row>
       <Icon
-        v-for="(icon, i) in icons"
+        v-for="(icon, i) in getIconsList(this.search)"
         :key="i"
         :name="icon.name"
         @clicked="pickIcon(icon)"
@@ -78,6 +78,7 @@
 import '@/assets/prism.css';
 import Icon from '@/components/Icon.vue';
 import Vue from 'vue';
+import searchArray from 'search-in-array';
 import eventBus from '../plugins/eventBus';
 import iconsJSON from '../data/icons.json';
 
@@ -92,6 +93,7 @@ export default Vue.extend({
     icons: iconsJSON.slice(0, 100),
     pickedIcon: {},
     sheet: false,
+    search: undefined,
   }),
 
   methods: {
@@ -111,12 +113,23 @@ export default Vue.extend({
       const randomInt = this.getRandomInt(0, this.icons.length);
       this.pickIcon(this.icons[randomInt]);
     },
+    getIconsList(searchQuery: any) {
+      if (searchQuery === '' || searchQuery === undefined || searchQuery === null || searchQuery.length < 3) {
+        return iconsJSON.slice(0, 100);
+      }
+      return searchArray.getSearchResult(searchQuery, iconsJSON, 'name');
+    },
   },
 
   created() {
     // On click 'Random icon' item in dropdown menu
     eventBus.$on('random', () => {
       this.randomIcon();
+    });
+
+    // On enter value>3 in search field
+    eventBus.$on('search', (value: string) => {
+      this.search = value;
     });
   },
 

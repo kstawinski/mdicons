@@ -3,8 +3,15 @@
     <Header />
 
     <v-main>
-      <IconsList />
-      <About :state="showAbout" />
+      <v-row class="ma-8">
+        <v-col class="pr-12">
+          <Sidebar />
+        </v-col>
+        <v-col cols="9" class="ml-auto">
+          <IconsList />
+          <About :state="showAbout" />
+        </v-col>
+      </v-row>
     </v-main>
   </v-app>
 </template>
@@ -12,6 +19,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import Header from '@/components/Header.vue';
+import Sidebar from '@/components/Sidebar.vue';
 import IconsList from '@/components/IconsList.vue';
 import About from '@/components/About.vue';
 import eventBus from './plugins/eventBus';
@@ -21,6 +29,7 @@ export default Vue.extend({
 
   components: {
     Header,
+    Sidebar,
     IconsList,
     About,
   },

@@ -30,6 +30,7 @@
     "@aminoeditor/vue-prism": "^1.0.13",
     "core-js": "^3.6.5",
     "prismjs": "^1.21.0",
+    "search-in-array": "^1.0.3",
     "vue": "^2.6.11",
     "vuetify": "^2.2.11"
   },
