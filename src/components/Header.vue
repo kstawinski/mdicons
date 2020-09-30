@@ -22,7 +22,7 @@
       <span>{{ $vuetify.theme.dark ? 'Disable' : 'Enable' }} dark mode</span>
     </v-tooltip>
 
-    <v-menu transition="slide-y-transition" bottom :close-on-content-click="true">
+    <v-menu transition="slide-y-transition" nudge-bottom="20" :close-on-content-click="true">
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           icon
