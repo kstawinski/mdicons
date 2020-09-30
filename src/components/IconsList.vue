@@ -63,7 +63,7 @@
       </v-sheet>
     </v-bottom-sheet>
 
-    <v-row class="ma-8">
+    <v-row>
       <Icon
         v-for="(icon, i) in icons"
         :key="i"

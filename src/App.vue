@@ -3,7 +3,7 @@
     <Header />
 
     <v-main>
-      <v-row>
+      <v-row class="ma-8">
         <v-col cols="2">
           <Sidebar />
         </v-col>
