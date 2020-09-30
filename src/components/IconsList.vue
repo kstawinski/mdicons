@@ -99,9 +99,12 @@ export default Vue.extend({
   methods: {
     pickIcon(iconObject: object) {
       this.pickedIcon = iconObject;
+
+      // Show bottom sheet
       this.sheet = true;
     },
     formatNameToCode(name: string) {
+      // Remove dashes and start each word with a capital letter
       return name.split('-').map((text) => text.charAt(0).toUpperCase() + text.slice(1)).join('');
     },
     getRandomInt(paramMin: number, paramMax: number) {
@@ -110,13 +113,18 @@ export default Vue.extend({
       return Math.floor(Math.random() * (max - min)) + min;
     },
     randomIcon() {
+      // Generate random number from the range (0, all icons)
       const randomInt = this.getRandomInt(0, this.icons.length);
+
+      // Pick icon with index generated above
       this.pickIcon(this.icons[randomInt]);
     },
     getIconsList(searchQuery: any) {
+      // If search query is null/undefined/empty/shorten than 3 chars
       if (searchQuery === '' || searchQuery === undefined || searchQuery === null || searchQuery.length < 3) {
         return iconsJSON.slice(0, 100);
       }
+      // If not - return filtered array
       return searchArray.getSearchResult(searchQuery, iconsJSON, 'name');
     },
   },
@@ -127,7 +135,7 @@ export default Vue.extend({
       this.randomIcon();
     });
 
-    // On enter value>3 in search field
+    // On enter some in search query
     eventBus.$on('search', (value: string) => {
       this.search = value;
     });

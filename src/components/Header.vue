@@ -70,6 +70,7 @@ export default Vue.extend({
     setDarkMode() {
       localStorage.setItem('darkmode', this.$vuetify.theme.dark.toString());
     },
+    // Emit click on some menu item with emitName property included in @click event
     emitClick(name: string) {
       eventBus.$emit(name);
     },

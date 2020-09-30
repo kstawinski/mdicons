@@ -27,6 +27,7 @@ export default Vue.extend({
   }),
 
   methods: {
+    // Emit search query to component with icons list
     emitValue() {
       eventBus.$emit('search', this.search);
     },
