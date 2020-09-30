@@ -7,12 +7,10 @@
       hint="Keywords for icon what you are looking for."
       persistent-hint
       outlined
-      clearable
       v-model="search"
       @keypress="emitValue"
       @keyup="emitValue"
       @keydown="emitValue"
-      @click:clear="emitValue"
     ></v-text-field>
   </v-row>
 </template>
