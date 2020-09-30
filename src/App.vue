@@ -4,10 +4,10 @@
 
     <v-main>
       <v-row class="ma-8">
-        <v-col cols="2">
+        <v-col class="pr-12">
           <Sidebar />
         </v-col>
-        <v-col cols="10">
+        <v-col cols="9" class="ml-auto">
           <IconsList />
           <About :state="showAbout" />
         </v-col>
