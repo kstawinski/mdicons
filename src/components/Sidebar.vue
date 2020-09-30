@@ -10,6 +10,9 @@
       clearable
       v-model="search"
       @keypress="emitValue"
+      @keyup="emitValue"
+      @keydown="emitValue"
+      @click:clear="emitValue"
     ></v-text-field>
   </v-row>
 </template>
@@ -27,9 +30,7 @@ export default Vue.extend({
 
   methods: {
     emitValue() {
-      if (this.search.length >= 3) {
-        eventBus.$emit('search', this.search);
-      }
+      eventBus.$emit('search', this.search);
     },
   },
 });

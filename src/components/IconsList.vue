@@ -65,7 +65,7 @@
 
     <v-row>
       <Icon
-        v-for="(icon, i) in getIconsList()"
+        v-for="(icon, i) in getIconsList(this.search)"
         :key="i"
         :name="icon.name"
         @clicked="pickIcon(icon)"
@@ -113,11 +113,11 @@ export default Vue.extend({
       const randomInt = this.getRandomInt(0, this.icons.length);
       this.pickIcon(this.icons[randomInt]);
     },
-    getIconsList() {
-      if (this.search) {
-        return searchArray.getSearchResult(this.search, iconsJSON, 'name');
+    getIconsList(searchQuery: any) {
+      if (searchQuery === '' || searchQuery === undefined || searchQuery === null || searchQuery.length < 3) {
+        return iconsJSON.slice(0, 100);
       }
-      return iconsJSON.slice(0, 100);
+      return searchArray.getSearchResult(searchQuery, iconsJSON, 'name');
     },
   },
 
