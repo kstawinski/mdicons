@@ -3,8 +3,15 @@
     <Header />
 
     <v-main>
-      <IconsList />
-      <About :state="showAbout" />
+      <v-row>
+        <v-col cols="2">
+          sidebar
+        </v-col>
+        <v-col cols="10">
+          <IconsList />
+          <About :state="showAbout" />
+        </v-col>
+      </v-row>
     </v-main>
   </v-app>
 </template>
