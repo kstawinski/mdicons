@@ -5,7 +5,7 @@
     <v-main>
       <v-row>
         <v-col cols="2">
-          sidebar
+          <Sidebar />
         </v-col>
         <v-col cols="10">
           <IconsList />
@@ -19,6 +19,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import Header from '@/components/Header.vue';
+import Sidebar from '@/components/Sidebar.vue';
 import IconsList from '@/components/IconsList.vue';
 import About from '@/components/About.vue';
 import eventBus from './plugins/eventBus';
@@ -28,6 +29,7 @@ export default Vue.extend({
 
   components: {
     Header,
+    Sidebar,
     IconsList,
     About,
   },
