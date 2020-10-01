@@ -44,7 +44,9 @@ export default Vue.extend({
       const isDark = localStorage.getItem('darkmode');
       const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-      if (isDark === 'true' || prefersDark) {
+      if (isDark === 'true') {
+        this.$vuetify.theme.dark = true;
+      } else if (isDark === null && prefersDark) {
         this.$vuetify.theme.dark = true;
       } else {
         this.$vuetify.theme.dark = false;
