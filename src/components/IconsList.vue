@@ -31,24 +31,32 @@
                 <!-- Button: Visit MDI -->
                 <v-btn
                   :href="`https://materialdesignicons.com/icon/${pickedIcon.name}`"
-                  elevation="1"
+                  elevation="0"
                   target="_blank"
                   class="mr-2"
                   text
                   color="secondary"
                 >
                   <span>Visit MDI</span>
-                  <v-icon class="ml-2" size="18">mdi-open-in-new</v-icon>
+                  <v-icon
+                    class="ml-2"
+                    size="18"
+                    style="opacity: 0.3"
+                  >mdi-open-in-new</v-icon>
                 </v-btn>
 
                 <!-- Button: Copy code -->
                 <v-btn
-                  elevation="1"
+                  elevation="0"
                   text
                   color="secondary"
                 >
                   <span>Copy code</span>
-                  <v-icon class="ml-2" size="18">mdi-clipboard-text-outline</v-icon>
+                  <v-icon
+                    class="ml-2"
+                    size="18"
+                    style="opacity: 0.3"
+                  >mdi-clipboard-text-outline</v-icon>
                 </v-btn>
               </div>
             </main>
