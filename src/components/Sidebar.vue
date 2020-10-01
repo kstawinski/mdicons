@@ -4,7 +4,7 @@
     <v-text-field
       label="Search"
       prepend-inner-icon="mdi-magnify"
-      hint="Keywords for icon what you are looking for."
+      hint="Keyword of the icon you are looking for"
       persistent-hint
       outlined
       v-model="search"
