@@ -151,8 +151,8 @@ export default Vue.extend({
 
   mounted() {
     window.addEventListener('keyup', (event) => {
-      // On space click
-      if (event.keyCode === 32) {
+      // On slash click
+      if (event.keyCode === 191) {
         this.randomIcon();
       }
     });
