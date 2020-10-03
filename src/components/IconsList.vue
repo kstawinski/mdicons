@@ -44,20 +44,6 @@
                     style="opacity: 0.3"
                   >mdi-open-in-new</v-icon>
                 </v-btn>
-
-                <!-- Button: Copy code -->
-                <v-btn
-                  elevation="0"
-                  text
-                  color="secondary"
-                >
-                  <span>Copy code</span>
-                  <v-icon
-                    class="ml-2"
-                    size="18"
-                    style="opacity: 0.3"
-                  >mdi-clipboard-text-outline</v-icon>
-                </v-btn>
               </div>
             </main>
 
