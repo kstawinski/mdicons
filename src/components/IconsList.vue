@@ -11,10 +11,7 @@
           <!-- Icon details -->
           <div>
             <!-- Icon name -->
-            <header
-              class="text-h6 secondary--text"
-              style="cursor: pointer;"
-            >
+            <header class="text-h6 secondary--text">
               {{ pickedIcon.name }}
             </header>
 
