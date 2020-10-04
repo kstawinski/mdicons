@@ -111,7 +111,7 @@ export default Vue.extend({
       // Pick icon with index generated above
       this.pickIcon(iconsJSON[randomInt]);
     },
-    getIconsList(searchQuery: any) {
+    getIconsList(searchQuery: string|null|undefined) {
       // If search query is null/undefined/empty/shorten than 3 chars
       if (searchQuery === '' || searchQuery === undefined || searchQuery === null || searchQuery.length < 3) {
         return iconsJSON.slice(0, this.iconsCount);
