@@ -106,10 +106,10 @@ export default Vue.extend({
     },
     randomIcon() {
       // Generate random number from the range (0, all icons)
-      const randomInt = this.getRandomInt(0, this.icons.length);
+      const randomInt = this.getRandomInt(0, this.iconsCount);
 
       // Pick icon with index generated above
-      this.pickIcon(this.icons[randomInt]);
+      this.pickIcon(iconsJSON[randomInt]);
     },
     getIconsList(searchQuery: any) {
       // If search query is null/undefined/empty/shorten than 3 chars
