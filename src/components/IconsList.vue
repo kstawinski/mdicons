@@ -82,6 +82,7 @@ export default Vue.extend({
 
   data: () => ({
     icons: iconsJSON.slice(0, 100),
+    iconsCount: 350,
     pickedIcon: {},
     sheet: false,
     search: undefined,
@@ -113,10 +114,20 @@ export default Vue.extend({
     getIconsList(searchQuery: any) {
       // If search query is null/undefined/empty/shorten than 3 chars
       if (searchQuery === '' || searchQuery === undefined || searchQuery === null || searchQuery.length < 3) {
-        return iconsJSON.slice(0, 100);
+        return iconsJSON.slice(0, this.iconsCount);
       }
       // If not - return filtered array
       return searchArray.getSearchResult(searchQuery, iconsJSON, 'name');
+    },
+    scroll() {
+      window.onscroll = () => {
+        const docEl = document.documentElement;
+        const bottomOfWindow = docEl.scrollTop + window.innerHeight === docEl.offsetHeight;
+
+        if (bottomOfWindow - 300) {
+          this.iconsCount += 50;
+        }
+      };
     },
   },
 
@@ -130,6 +141,9 @@ export default Vue.extend({
     eventBus.$on('search', (value: string) => {
       this.search = value;
     });
+
+    // Monitor scroll
+    this.scroll();
   },
 
   mounted() {
