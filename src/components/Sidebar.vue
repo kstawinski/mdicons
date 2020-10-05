@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <v-row style="position: sticky; top: 100px; left: 0;">
     <!-- Search -->
     <v-text-field
       label="Search"
