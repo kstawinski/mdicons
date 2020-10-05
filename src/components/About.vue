@@ -8,34 +8,52 @@
         <span class="headline">About project 🚀</span>
       </v-card-title>
       <v-card-text>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque purus ex,
-        feugiat mollis vehicula a, dignissim at dui. Maecenas sed sem quam. Aenean
-        maximus tortor vulputate eros porta ultrices id quis dolor. Cras quis laoreet
-        leo. Fusce tincidunt tortor id dignissim gravida. Nulla interdum nunc at orci
-        ornare, vitae rutrum mi ultricies. Praesent blandit ornare odio non sagittis.
-        Nam in mi ac quam volutpat commodo sit amet et eros. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Maecenas tincidunt tortor sit amet cursus
-        sollicitudin. Nulla lobortis velit urna, nec scelerisque mauris dapibus et.
-        Curabitur mollis risus a congue rhoncus. Phasellus sit amet tortor vestibulum,
-        maximus ligula feugiat, ultricies ex. Ut quis auctor tellus, nec lobortis justo.
+        <p>
+          I am very pleased that you are using my application. The idea behind the app
+          is very simple - I wanted to create a Material Design icon picker faster
+          than the official one. I think I managed 😜
+        </p>
+
+        <p>
+          The application has several functions:
+          <ol>
+            <li>
+              <b class="white--text">preview information about the icon</b>
+              selected by clicking, such as: name, code used to import
+              it, author or version,
+            </li>
+
+            <li>
+              <b class="white--text">randomize the icon</b> after pressing a slash,
+            </li>
+
+            <li>
+              <b class="white--text">icon search</b> by matching the phrase entered
+              in the search engine to the icon name.</li>
+          </ol>
+        </p>
+
+        <p>
+          I am planning on adding some features. If you want, we can discuss them
+          via Issues in the project repository.
+        </p>
+
+        <p>
+          I would be very grateful if you decide to add your piece of code to the
+          app. The project is open-source, I invite you to contribute! 👐
+        </p>
+
+        <v-btn
+          color="primary"
+          text
+          :link="true"
+          target="_blank"
+          href="https://github.com/kstawinski/material-design-icons"
+        >
+          <v-icon class="mr-2" size="17">mdi-github</v-icon>
+          Repository
+        </v-btn>
       </v-card-text>
-      <!-- <v-card-actions>
-        <v-spacer></v-spacer>
-        <v-btn
-          color="green darken-1"
-          text
-          @click="dialog = false"
-        >
-          Disagree
-        </v-btn>
-        <v-btn
-          color="green darken-1"
-          text
-          @click="$emit('close')"
-        >
-          Agree
-        </v-btn>
-      </v-card-actions> -->
     </v-card>
   </v-dialog>
 </template>
