@@ -8,16 +8,12 @@
             <v-icon size="76" :color="iconColor">{{ `mdi-${pickedIcon.name}` }}</v-icon>
 
             <div class="mt-2">
-              <v-btn
+              <Color
                 v-for="(color, i) in colors"
                 :key="i"
-                icon
-                x-small
                 :color="color"
-                @click="selectColor(color)"
-              >
-                <v-icon>mdi-circle-medium</v-icon>
-              </v-btn>
+                @picked="selectColor"
+              />
             </div>
           </div>
 
@@ -81,6 +77,7 @@
 <script lang="ts">
 import '@/assets/prism.css';
 import Icon from '@/components/Icon.vue';
+import Color from '@/components/Color.vue';
 import Vue from 'vue';
 import searchArray from 'search-in-array';
 import eventBus from '../plugins/eventBus';
@@ -91,6 +88,7 @@ export default Vue.extend({
 
   components: {
     Icon,
+    Color,
   },
 
   data: () => ({
