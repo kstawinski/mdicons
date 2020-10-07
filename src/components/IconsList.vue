@@ -10,6 +10,7 @@
             <div class="mt-2">
               <v-btn
                 icon
+                x-small
                 color="red"
                 @click="selectColor('red')"
               >
@@ -18,6 +19,7 @@
 
               <v-btn
                 icon
+                x-small
                 color="light-green"
                 @click="selectColor('light-green')"
               >
@@ -26,6 +28,7 @@
 
               <v-btn
                 icon
+                x-small
                 color="light-blue"
                 @click="selectColor('light-blue')"
               >
