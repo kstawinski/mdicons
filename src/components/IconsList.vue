@@ -6,6 +6,29 @@
           <!-- Icon preview -->
           <div class="pa-5">
             <v-icon size="76" :color="iconColor">{{ `mdi-${pickedIcon.name}` }}</v-icon>
+
+            <div class="mt-2">
+              <v-btn
+                icon
+                color="red"
+              >
+                <v-icon>mdi-circle-medium</v-icon>
+              </v-btn>
+
+              <v-btn
+                icon
+                color="light-green"
+              >
+                <v-icon>mdi-circle-medium</v-icon>
+              </v-btn>
+
+              <v-btn
+                icon
+                color="light-blue"
+              >
+                <v-icon>mdi-circle-medium</v-icon>
+              </v-btn>
+            </div>
           </div>
 
           <!-- Icon details -->
