@@ -9,46 +9,12 @@
 
             <div class="mt-2">
               <v-btn
+                v-for="(color, i) in colors"
+                :key="i"
                 icon
                 x-small
-                color="red"
-                @click="selectColor('red')"
-              >
-                <v-icon>mdi-circle-medium</v-icon>
-              </v-btn>
-
-              <v-btn
-                icon
-                x-small
-                color="light-green"
-                @click="selectColor('light-green')"
-              >
-                <v-icon>mdi-circle-medium</v-icon>
-              </v-btn>
-
-              <v-btn
-                icon
-                x-small
-                color="light-blue"
-                @click="selectColor('light-blue')"
-              >
-                <v-icon>mdi-circle-medium</v-icon>
-              </v-btn>
-
-              <v-btn
-                icon
-                x-small
-                color="white"
-                @click="selectColor('white')"
-              >
-                <v-icon>mdi-circle-medium</v-icon>
-              </v-btn>
-
-              <v-btn
-                icon
-                x-small
-                color="grey darken-3"
-                @click="selectColor('grey darken-3')"
+                :color="color"
+                @click="selectColor(color)"
               >
                 <v-icon>mdi-circle-medium</v-icon>
               </v-btn>
@@ -134,6 +100,7 @@ export default Vue.extend({
     sheet: false,
     search: undefined,
     iconColor: 'secondary',
+    colors: ['red', 'light-green', 'light-blue', 'white', 'grey darken-3'],
   }),
 
   methods: {
