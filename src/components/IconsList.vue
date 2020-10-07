@@ -34,6 +34,24 @@
               >
                 <v-icon>mdi-circle-medium</v-icon>
               </v-btn>
+
+              <v-btn
+                icon
+                x-small
+                color="white"
+                @click="selectColor('white')"
+              >
+                <v-icon>mdi-circle-medium</v-icon>
+              </v-btn>
+
+              <v-btn
+                icon
+                x-small
+                color="grey darken-3"
+                @click="selectColor('grey darken-3')"
+              >
+                <v-icon>mdi-circle-medium</v-icon>
+              </v-btn>
             </div>
           </div>
 
