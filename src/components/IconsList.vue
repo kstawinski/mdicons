@@ -92,7 +92,6 @@ export default Vue.extend({
   },
 
   data: () => ({
-    icons: iconsJSON.slice(0, 100),
     iconsCount: 350,
     pickedIcon: {},
     sheet: false,
