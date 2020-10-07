@@ -5,7 +5,16 @@
         <article class="d-flex">
           <!-- Icon preview -->
           <div class="pa-5">
-            <v-icon size="76" color="secondary">{{ `mdi-${pickedIcon.name}` }}</v-icon>
+            <v-icon size="76" :color="iconColor">{{ `mdi-${pickedIcon.name}` }}</v-icon>
+
+            <div class="mt-2">
+              <Color
+                v-for="(color, i) in colors"
+                :key="i"
+                :color="color"
+                @picked="selectColor"
+              />
+            </div>
           </div>
 
           <!-- Icon details -->
@@ -68,6 +77,7 @@
 <script lang="ts">
 import '@/assets/prism.css';
 import Icon from '@/components/Icon.vue';
+import Color from '@/components/Color.vue';
 import Vue from 'vue';
 import searchArray from 'search-in-array';
 import eventBus from '../plugins/eventBus';
@@ -78,6 +88,7 @@ export default Vue.extend({
 
   components: {
     Icon,
+    Color,
   },
 
   data: () => ({
@@ -86,6 +97,8 @@ export default Vue.extend({
     pickedIcon: {},
     sheet: false,
     search: undefined,
+    iconColor: 'secondary',
+    colors: ['red', 'light-green', 'light-blue', 'white', 'grey darken-3'],
   }),
 
   methods: {
@@ -128,6 +141,9 @@ export default Vue.extend({
           this.iconsCount += 50;
         }
       };
+    },
+    selectColor(color: string) {
+      this.iconColor = color;
     },
   },
 
