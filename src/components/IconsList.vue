@@ -7,7 +7,7 @@
           <div class="pa-5">
             <v-icon size="76" :color="iconColor">{{ `mdi-${pickedIcon.name}` }}</v-icon>
 
-            <div class="mt-2">
+            <div class="mt-2 colors">
               <Color
                 v-for="(color, i) in colors"
                 :key="i"
@@ -171,3 +171,14 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.colors {
+  opacity: 0.4;
+  transition: 0.3s opacity;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+</style>
