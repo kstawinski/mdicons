@@ -11,6 +11,7 @@
               <v-btn
                 icon
                 color="red"
+                @click="selectColor('red')"
               >
                 <v-icon>mdi-circle-medium</v-icon>
               </v-btn>
@@ -18,6 +19,7 @@
               <v-btn
                 icon
                 color="light-green"
+                @click="selectColor('light-green')"
               >
                 <v-icon>mdi-circle-medium</v-icon>
               </v-btn>
@@ -25,6 +27,7 @@
               <v-btn
                 icon
                 color="light-blue"
+                @click="selectColor('light-blue')"
               >
                 <v-icon>mdi-circle-medium</v-icon>
               </v-btn>
@@ -152,6 +155,9 @@ export default Vue.extend({
           this.iconsCount += 50;
         }
       };
+    },
+    selectColor(color: string) {
+      this.iconColor = color;
     },
   },
 
