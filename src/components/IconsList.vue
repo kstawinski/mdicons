@@ -136,7 +136,7 @@ export default Vue.extend({
         const docEl = document.documentElement;
         const bottomOfWindow = docEl.scrollTop + window.innerHeight === docEl.offsetHeight;
 
-        if (bottomOfWindow - 300) {
+        if (bottomOfWindow) {
           this.iconsCount += 50;
         }
       };
