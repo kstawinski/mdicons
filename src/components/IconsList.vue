@@ -95,7 +95,7 @@ export default Vue.extend({
     iconsCount: 350,
     pickedIcon: {},
     sheet: false,
-    search: undefined,
+    search: '',
     iconColor: 'secondary',
     colors: ['red', 'light-green', 'light-blue', 'white', 'grey darken-3'],
   }),
