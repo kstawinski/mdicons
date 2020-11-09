@@ -1,67 +1,77 @@
 <template>
   <v-row>
-    <v-bottom-sheet v-model="sheet">
-      <v-sheet class="pa-4" v-if="sheet">
-        <article class="d-flex">
-          <!-- Icon preview -->
-          <div class="pa-5">
-            <v-icon size="76" :color="iconColor">{{ `mdi-${pickedIcon.name}` }}</v-icon>
+    <div tabindex="-1" class="v-dialog__content v-dialog__content--active">
+      <transition name="bottom-sheet-transition">
+        <div
+          class="
+            iconslist
+            background
+            pa-4 ma-5
+            v-dialog v-bottom-sheet v-dialog--active v-dialog--persistent
+          "
+          v-if="sheet"
+        >
+          <article class="d-flex">
+            <!-- Icon preview -->
+            <div class="pa-5">
+              <v-icon size="76" :color="iconColor">{{ `mdi-${pickedIcon.name}` }}</v-icon>
 
-            <div class="mt-2 colors">
-              <Color
-                v-for="(color, i) in colors"
-                :key="i"
-                :color="color"
-                @picked="selectColor"
-              />
-            </div>
-          </div>
-
-          <!-- Icon details -->
-          <div>
-            <!-- Icon name -->
-            <header class="text-h6 secondary--text">
-              {{ pickedIcon.name }}
-            </header>
-
-            <main>
-              <!-- Icon code -->
-              <prism
-                language="javascript"
-                :code="`import { mdi${formatNameToCode(pickedIcon.name)} } from '@mdi/js';`"
-                :style="$vuetify.theme.dark ? 'background-color: #101010;' : ''"
-              ></prism>
-
-              <!-- Icon buttons -->
-              <div class="mb-2">
-                <!-- Button: Visit MDI -->
-                <v-btn
-                  :href="`https://materialdesignicons.com/icon/${pickedIcon.name}`"
-                  elevation="0"
-                  target="_blank"
-                  class="mr-2"
-                  text
-                  color="secondary"
-                >
-                  <span>Visit MDI</span>
-                  <v-icon
-                    class="ml-2"
-                    size="18"
-                    style="opacity: 0.3"
-                  >mdi-open-in-new</v-icon>
-                </v-btn>
+              <div class="mt-2 colors">
+                <Color
+                  v-for="(color, i) in colors"
+                  :key="i"
+                  :color="color"
+                  @picked="selectColor"
+                />
               </div>
-            </main>
+            </div>
 
-            <!-- Icon footer -->
-            <footer class="text--secondary caption">
-              {{ pickedIcon.codepoint }} ·
-              by {{ pickedIcon.author }} (v{{ pickedIcon.version }})
-            </footer>
-          </div>
-        </article>
-      </v-sheet>
-    </v-bottom-sheet>
+            <!-- Icon details -->
+            <div>
+              <!-- Icon name -->
+              <header class="text-h6 secondary--text">
+                {{ pickedIcon.name }}
+              </header>
+
+              <main>
+                <!-- Icon code -->
+                <prism
+                  language="javascript"
+                  :code="`import { mdi${formatNameToCode(pickedIcon.name)} } from '@mdi/js';`"
+                  :style="$vuetify.theme.dark ? 'background-color: #101010;' : ''"
+                ></prism>
+
+                <!-- Icon buttons -->
+                <div class="mb-2">
+                  <!-- Button: Visit MDI -->
+                  <v-btn
+                    :href="`https://materialdesignicons.com/icon/${pickedIcon.name}`"
+                    elevation="0"
+                    target="_blank"
+                    class="mr-2"
+                    text
+                    color="secondary"
+                  >
+                    <span>Visit MDI</span>
+                    <v-icon
+                      class="ml-2"
+                      size="18"
+                      style="opacity: 0.3"
+                    >mdi-open-in-new</v-icon>
+                  </v-btn>
+                </div>
+              </main>
+
+              <!-- Icon footer -->
+              <footer class="text--secondary caption">
+                {{ pickedIcon.codepoint }} ·
+                by {{ pickedIcon.author }} (v{{ pickedIcon.version }})
+              </footer>
+            </div>
+          </article>
+        </div>
+      </transition>
+    </div>
 
     <v-row>
       <Icon
@@ -128,7 +138,7 @@ export default Vue.extend({
       // If search query is null/undefined/empty/shorten than 3 chars
       if (searchQuery === '' || searchQuery === undefined || searchQuery === null || searchQuery.length < 3) {
         if (this.outlineOnly) {
-          return iconsJSON.slice(0, this.iconsCount).filter((icon) => icon.name.includes('-outline'));
+          return iconsJSON.slice(0, this.iconsCount * 3.5).filter((icon) => icon.name.includes('-outline'));
         }
         return iconsJSON.slice(0, this.iconsCount);
       }
@@ -192,5 +202,19 @@ export default Vue.extend({
   &:hover {
     opacity: 1;
   }
+}
+
+.iconslist {
+  box-shadow: 0 0 150px var(--v-background-base);
+  border-radius: 5px !important;
+
+  @media (min-width: 1256px) {
+    width: 50vw;
+  }
+}
+
+.v-dialog__content {
+  display: flex;
+  justify-content: flex-start;
 }
 </style>
