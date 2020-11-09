@@ -2,11 +2,10 @@
   <v-row style="position: sticky; top: 100px; left: 0;">
     <!-- Search -->
     <v-text-field
-      label="Search"
-      prepend-inner-icon="mdi-magnify"
-      hint="Keyword of the icon you are looking for"
-      persistent-hint
-      outlined
+      label="Search..."
+      autofocus
+      filled
+      hide-details
       v-model="search"
       @keypress="emitValue"
       @keyup="emitValue"
@@ -24,6 +23,7 @@ export default Vue.extend({
 
   data: () => ({
     search: undefined,
+    outlineOnly: false,
   }),
 
   methods: {
