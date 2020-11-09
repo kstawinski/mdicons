@@ -11,6 +11,13 @@
       @keyup="emitValue"
       @keydown="emitValue"
     ></v-text-field>
+
+    <!-- Outline only -->
+    <v-switch
+      v-model="outlineOnly"
+      label="Outline icons only"
+      hide-details
+    ></v-switch>
   </v-row>
 </template>
 
