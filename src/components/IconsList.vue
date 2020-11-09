@@ -95,6 +95,7 @@ export default Vue.extend({
     iconsCount: 350,
     pickedIcon: {},
     sheet: false,
+    outlineOnly: false,
     search: '',
     iconColor: 'secondary',
     colors: ['red', 'light-green', 'light-blue', 'white', 'grey darken-3'],
@@ -126,9 +127,15 @@ export default Vue.extend({
     getIconsList(searchQuery: string|null|undefined) {
       // If search query is null/undefined/empty/shorten than 3 chars
       if (searchQuery === '' || searchQuery === undefined || searchQuery === null || searchQuery.length < 3) {
+        if (this.outlineOnly) {
+          return iconsJSON.slice(0, this.iconsCount).filter((icon) => icon.name.includes('-outline'));
+        }
         return iconsJSON.slice(0, this.iconsCount);
       }
       // If not - return filtered array
+      if (this.outlineOnly) {
+        return searchArray.getSearchResult(searchQuery, iconsJSON, 'name').filter((icon) => icon.name.includes('-outline'));
+      }
       return searchArray.getSearchResult(searchQuery, iconsJSON, 'name');
     },
     scroll() {
@@ -155,6 +162,11 @@ export default Vue.extend({
     // On enter some in search query
     eventBus.$on('search', (value: string) => {
       this.search = value;
+    });
+
+    // On "outline only" switch change
+    eventBus.$on('outline', (state: boolean) => {
+      this.outlineOnly = state;
     });
 
     // Monitor scroll
