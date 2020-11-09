@@ -11,6 +11,14 @@
       @keyup="emitValue"
       @keydown="emitValue"
     ></v-text-field>
+
+    <!-- Outline only -->
+    <v-switch
+      v-model="outlineOnly"
+      label="Outline icons only"
+      hide-details
+      @change="emitOutline()"
+    ></v-switch>
   </v-row>
 </template>
 
@@ -30,6 +38,10 @@ export default Vue.extend({
     // Emit search query to component with icons list
     emitValue() {
       eventBus.$emit('search', this.search);
+    },
+    // Emit change of displaying (only outline or all)
+    emitOutline() {
+      eventBus.$emit('outline', this.outlineOnly);
     },
   },
 });
