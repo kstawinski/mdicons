@@ -207,6 +207,9 @@ export default Vue.extend({
 .iconslist {
   box-shadow: 0 0 150px var(--v-background-base);
   border-radius: 5px !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 
   @media (min-width: 1256px) {
     width: 50vw;
