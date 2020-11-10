@@ -1984,7 +1984,8 @@
         "codepoint": "F0029",
         "aliases": [
             "warning-octagon",
-            "report"
+            "report",
+            "stop-alert"
         ],
         "tags": [
             "Alert \/ Error"
@@ -1997,7 +1998,8 @@
         "name": "alert-octagon-outline",
         "codepoint": "F0CE6",
         "aliases": [
-            "warning-octagon-outline"
+            "warning-octagon-outline",
+            "stop-alert-outline"
         ],
         "tags": [
             "Alert \/ Error"
@@ -6297,7 +6299,9 @@
         "id": "AD030F55-7B31-45F9-94F7-738CC84B2009",
         "name": "atom-variant",
         "codepoint": "F0E7B",
-        "aliases": [],
+        "aliases": [
+            "orbit"
+        ],
         "tags": [
             "Science"
         ],
@@ -7183,6 +7187,17 @@
         "version": "1.5.54"
     },
     {
+        "id": "1642BE6C-C1B6-49EA-833D-BB5E20BC1C69",
+        "name": "bank-check",
+        "codepoint": "F1655",
+        "aliases": [],
+        "tags": [
+            "Banking"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "DAC4946E-1A07-44B4-977F-E51D740DA5FB",
         "name": "bank-minus",
         "codepoint": "F0DB0",
@@ -7192,6 +7207,28 @@
         ],
         "author": "Austin Andrews",
         "version": "3.5.94"
+    },
+    {
+        "id": "9379EA96-CBC9-4A84-BF1A-18A80E7BDBE2",
+        "name": "bank-off",
+        "codepoint": "F1656",
+        "aliases": [],
+        "tags": [
+            "Banking"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "4590ED1A-1E67-42F4-8D4B-E2B39E5EFC63",
+        "name": "bank-off-outline",
+        "codepoint": "F1657",
+        "aliases": [],
+        "tags": [
+            "Banking"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "952ADDE3-5EC1-4AB1-80F1-9FA7AA14AD74",
@@ -8821,7 +8858,9 @@
         "aliases": [
             "pint",
             "pub",
-            "bar"
+            "bar",
+            "drink",
+            "cup-full"
         ],
         "tags": [
             "Food \/ Drink"
@@ -8833,7 +8872,13 @@
         "id": "524E1789-7B3A-4BAD-9D04-2E8FD838DCFB",
         "name": "beer-outline",
         "codepoint": "F130C",
-        "aliases": [],
+        "aliases": [
+            "drink-outline",
+            "cup-full-outline",
+            "pint-outline",
+            "pub-outline",
+            "bar-outline"
+        ],
         "tags": [
             "Food \/ Drink"
         ],
@@ -9600,6 +9645,24 @@
         "version": "5.0.45"
     },
     {
+        "id": "08CE9E71-4426-4186-8573-7B2EDFE28F7D",
+        "name": "book-alert",
+        "codepoint": "F167C",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "6DDFDD69-EBA5-4BFB-A44F-6B84A7B3A4BC",
+        "name": "book-alert-outline",
+        "codepoint": "F167D",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "250BF541-072A-4773-8BC2-B1943DF1EDBB",
         "name": "book-alphabet",
         "codepoint": "F061D",
@@ -9609,6 +9672,96 @@
         "tags": [],
         "author": "Christopher Schreiner",
         "version": "1.6.50"
+    },
+    {
+        "id": "7B6400CF-D8CF-418B-A400-CDCA1D58E813",
+        "name": "book-arrow-down",
+        "codepoint": "F167E",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "7B9920BE-2895-4D38-A981-5E416D76403A",
+        "name": "book-arrow-down-outline",
+        "codepoint": "F167F",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "5D776E4B-7F6C-4385-A892-964B3F800F30",
+        "name": "book-arrow-left",
+        "codepoint": "F1680",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "1730A6B3-D405-4F4B-A12D-0957B5B268D7",
+        "name": "book-arrow-left-outline",
+        "codepoint": "F1681",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "2780AAEC-BE71-4C4A-8C02-7BCDBE521D74",
+        "name": "book-arrow-right",
+        "codepoint": "F1682",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "CCBCE4D7-2799-433B-AF47-A5105E45779A",
+        "name": "book-arrow-right-outline",
+        "codepoint": "F1683",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "E724EA9A-002E-4A3E-9275-690258105F1D",
+        "name": "book-arrow-up",
+        "codepoint": "F1684",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "D3DE3980-8DF9-4FED-B08D-F04B5610B84D",
+        "name": "book-arrow-up-outline",
+        "codepoint": "F1685",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "8D3C8531-8EAD-43FC-9139-B1A9D2BEB63D",
+        "name": "book-cancel",
+        "codepoint": "F1686",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "FA64FF4E-C720-4635-90EF-D4A913168329",
+        "name": "book-cancel-outline",
+        "codepoint": "F1687",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "ADF6BB0F-12F3-498F-B31A-07F6BFFFDF9D",
@@ -9629,6 +9782,42 @@
         "version": "5.4.55"
     },
     {
+        "id": "97CCD006-4DE0-4AEE-BB95-D9EBCCDE8012",
+        "name": "book-clock",
+        "codepoint": "F1688",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "EFEC2FA7-18B1-4753-88C4-E2531FA96DD5",
+        "name": "book-clock-outline",
+        "codepoint": "F1689",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "36C20B8A-AA61-49D5-9500-16917BBDF388",
+        "name": "book-cog",
+        "codepoint": "F168A",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "B63BFA22-6A8E-48FD-8BDB-E82BB550411D",
+        "name": "book-cog-outline",
+        "codepoint": "F168B",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "CC30F9D0-3076-4189-A00D-F570D5B0C5D1",
         "name": "book-cross",
         "codepoint": "F00A2",
@@ -9640,6 +9829,42 @@
         ],
         "author": "Christopher Schreiner",
         "version": "1.5.54"
+    },
+    {
+        "id": "CF11FAB5-CEE6-4F8D-9E64-67285419FF62",
+        "name": "book-edit",
+        "codepoint": "F168C",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "615E9F0E-F80A-4806-8023-F3B5E47A0F07",
+        "name": "book-edit-outline",
+        "codepoint": "F168D",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "B115D616-1428-4D6B-84D7-643900FBEF77",
+        "name": "book-education",
+        "codepoint": "F16C9",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "2C5308E6-760F-4CD8-A2CF-DD3B5434B0A0",
+        "name": "book-education-outline",
+        "codepoint": "F16CA",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "4A6A20D1-3F8E-440A-BFB1-38CFB3FB3EC6",
@@ -9679,6 +9904,42 @@
         "version": "2.0.46"
     },
     {
+        "id": "F4804DDA-AD18-4DAF-A916-F0F6DC23F0A5",
+        "name": "book-lock-open-outline",
+        "codepoint": "F168E",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "2E088838-572B-45AC-B250-1C86900B787E",
+        "name": "book-lock-outline",
+        "codepoint": "F168F",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "D5DCE615-BCFA-4922-8F95-5CEA756FD378",
+        "name": "book-marker",
+        "codepoint": "F1690",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "69EBC2C1-A3D3-42E6-9868-3E97DD6DD301",
+        "name": "book-marker-outline",
+        "codepoint": "F1691",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "7367B5F0-8155-4F3D-9C7E-BFDF677442D8",
         "name": "book-minus",
         "codepoint": "F05D9",
@@ -9706,6 +9967,15 @@
         "tags": [],
         "author": "Michael Richins",
         "version": "2.3.50"
+    },
+    {
+        "id": "402AE77A-79CC-42EF-9FB7-7D11D2C949DA",
+        "name": "book-minus-outline",
+        "codepoint": "F1692",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "637C4988-5432-4F5E-ADD5-EBDC397D0622",
@@ -9739,6 +10009,33 @@
         ],
         "author": "Austin Andrews",
         "version": "1.5.54"
+    },
+    {
+        "id": "22B56C5C-000D-49DB-9D8A-DDD312662DFB",
+        "name": "book-music-outline",
+        "codepoint": "F1693",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "52463F43-10D2-41DC-B4EB-45DDE9A4E655",
+        "name": "book-off",
+        "codepoint": "F1694",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "C9B4D51E-AA3F-49D4-9603-CC5CA33EB28A",
+        "name": "book-off-outline",
+        "codepoint": "F1695",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "7EFAD89C-D84E-41F0-A8A4-F72AC8DB470C",
@@ -9861,6 +10158,33 @@
         "version": "2.7.94"
     },
     {
+        "id": "58B6134A-73CF-4E0E-AB85-DCBFB6B6766B",
+        "name": "book-plus-outline",
+        "codepoint": "F1696",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "CFAA64B9-8047-4713-AD53-574A398F187F",
+        "name": "book-refresh",
+        "codepoint": "F1697",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "7F62E9BE-F358-4CF8-B3DB-938805F83089",
+        "name": "book-refresh-outline",
+        "codepoint": "F1698",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "DAB52460-1820-4BD0-9695-67EBF9E84167",
         "name": "book-remove",
         "codepoint": "F0A97",
@@ -9890,6 +10214,15 @@
         "version": "1.5.54"
     },
     {
+        "id": "CDCF29D7-CED3-45DB-BBC8-ACEA8262738C",
+        "name": "book-remove-outline",
+        "codepoint": "F1699",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "AE0D918C-8BC9-4D85-B445-62039AD16FB2",
         "name": "book-search",
         "codepoint": "F0E84",
@@ -9906,6 +10239,42 @@
         "tags": [],
         "author": "Austin Andrews",
         "version": "3.7.94"
+    },
+    {
+        "id": "E48C6D20-C8BC-43A0-9F90-A9FBADAB3454",
+        "name": "book-settings",
+        "codepoint": "F169A",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "E090B509-20FE-405D-9811-221E533F79F3",
+        "name": "book-settings-outline",
+        "codepoint": "F169B",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "ACB38262-FB32-456E-AE84-6BCE160F56C4",
+        "name": "book-sync",
+        "codepoint": "F169C",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "8C2A47E9-6B8B-4504-A1C7-37EDFD9DC979",
+        "name": "book-sync-outline",
+        "codepoint": "F16C8",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "1B9F45CE-CA39-4ACF-8961-4B4B56D6F94A",
@@ -10935,6 +11304,24 @@
         "version": "3.2.89"
     },
     {
+        "id": "2059EB01-3552-45CF-A2A1-64DA37F124D0",
+        "name": "briefcase-off",
+        "codepoint": "F1658",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "EE25B28C-2F16-4BE0-95BB-8328DF0F0CA2",
+        "name": "briefcase-off-outline",
+        "codepoint": "F1659",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "1E7F3689-287C-40DC-B0DD-CF65987E9B53",
         "name": "briefcase-outline",
         "codepoint": "F0814",
@@ -11029,6 +11416,24 @@
         "tags": [],
         "author": "Google",
         "version": "5.3.45"
+    },
+    {
+        "id": "2C5F52C7-AC1B-417F-8035-DB25264DA0A4",
+        "name": "briefcase-variant-off",
+        "codepoint": "F165A",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "E89FB55E-396B-4E43-BC41-512B597CF474",
+        "name": "briefcase-variant-off-outline",
+        "codepoint": "F165B",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "5280D1B7-9418-4673-BB9E-6AB3BD640C92",
@@ -11480,7 +11885,9 @@
         "id": "774EC563-DF29-498C-8270-ABB051396687",
         "name": "bus-school",
         "codepoint": "F079F",
-        "aliases": [],
+        "aliases": [
+            "education"
+        ],
         "tags": [
             "Transportation + Road"
         ],
@@ -11860,6 +12267,17 @@
         "version": "2.2.43"
     },
     {
+        "id": "5837A731-F9AE-433E-AB31-12EE3D2D13D1",
+        "name": "calendar-end",
+        "codepoint": "F166C",
+        "aliases": [],
+        "tags": [
+            "Date \/ Time"
+        ],
+        "author": "Austin Andrews",
+        "version": "5.7.55"
+    },
+    {
         "id": "14692438-9215-4003-AF95-04AA7C27DA48",
         "name": "calendar-export",
         "codepoint": "F0B24",
@@ -11893,6 +12311,28 @@
         ],
         "author": "Michael Richins",
         "version": "2.8.94"
+    },
+    {
+        "id": "8189159C-0869-4B40-809C-ECE7C33A2EC0",
+        "name": "calendar-lock",
+        "codepoint": "F1641",
+        "aliases": [],
+        "tags": [
+            "Date \/ Time"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "38B4A077-A3EA-4AF2-8553-9888BA25589F",
+        "name": "calendar-lock-outline",
+        "codepoint": "F1642",
+        "aliases": [],
+        "tags": [
+            "Date \/ Time"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "12439778-1F4B-4498-8716-5BE128D194E1",
@@ -12123,6 +12563,17 @@
         ],
         "author": "Michael Richins",
         "version": "2.5.94"
+    },
+    {
+        "id": "D88F139B-9D00-462D-8AA5-C23A5A02FCC6",
+        "name": "calendar-start",
+        "codepoint": "F166D",
+        "aliases": [],
+        "tags": [
+            "Date \/ Time"
+        ],
+        "author": "Austin Andrews",
+        "version": "5.7.55"
     },
     {
         "id": "7343C074-F974-4083-89C5-3C2BABF4E3C9",
@@ -12750,6 +13201,15 @@
         ],
         "author": "Austin Andrews",
         "version": "2.0.46"
+    },
+    {
+        "id": "1DA6A01B-2804-4C68-A60E-20DBBB6938E5",
+        "name": "cannabis-off",
+        "codepoint": "F166E",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "74D4E706-53B2-4349-95B2-026B3057D9B2",
@@ -13790,7 +14250,8 @@
         "name": "cards-club",
         "codepoint": "F08CE",
         "aliases": [
-            "suit-clubs"
+            "suit-clubs",
+            "poker-club"
         ],
         "tags": [
             "Gaming \/ RPG"
@@ -13806,7 +14267,8 @@
             "suit-diamonds",
             "hov-lane",
             "high-occupancy-vehicle-lane",
-            "carpool-lane"
+            "carpool-lane",
+            "poker-diamond"
         ],
         "tags": [
             "Gaming \/ RPG",
@@ -13822,7 +14284,8 @@
         "aliases": [
             "hov-lane-outline",
             "high-occupancy-vehicle-lane-outline",
-            "carpool-lane-outline"
+            "carpool-lane-outline",
+            "poker-diamond-outline"
         ],
         "tags": [
             "Transportation + Road"
@@ -13835,7 +14298,8 @@
         "name": "cards-heart",
         "codepoint": "F08D0",
         "aliases": [
-            "suit-hearts"
+            "suit-hearts",
+            "poker-heart"
         ],
         "tags": [
             "Gaming \/ RPG"
@@ -13870,7 +14334,8 @@
         "name": "cards-spade",
         "codepoint": "F08D1",
         "aliases": [
-            "suit-spades"
+            "suit-spades",
+            "poker-spade"
         ],
         "tags": [
             "Gaming \/ RPG"
@@ -14285,7 +14750,11 @@
         "id": "31B2064A-79C9-44A7-8C5E-0490162A7864",
         "name": "cast-education",
         "codepoint": "F0E1D",
-        "aliases": [],
+        "aliases": [
+            "cast-school",
+            "school-online",
+            "cast-tutorial"
+        ],
         "tags": [],
         "author": "Google",
         "version": "3.6.95"
@@ -14772,7 +15241,9 @@
         "name": "chair-school",
         "codepoint": "F0125",
         "aliases": [
-            "desk"
+            "desk",
+            "education",
+            "learn"
         ],
         "tags": [],
         "author": "Austin Andrews",
@@ -15779,7 +16250,10 @@
         "id": "073FDF74-5305-45AB-8AC3-42A0FE6BBF9C",
         "name": "chess-king",
         "codepoint": "F0857",
-        "aliases": [],
+        "aliases": [
+            "crown",
+            "royalty"
+        ],
         "tags": [
             "Gaming \/ RPG"
         ],
@@ -15814,7 +16288,10 @@
         "id": "0B9D0593-D546-4DDD-AEB1-289943FB12AE",
         "name": "chess-queen",
         "codepoint": "F085A",
-        "aliases": [],
+        "aliases": [
+            "crown",
+            "royalty"
+        ],
         "tags": [
             "Gaming \/ RPG"
         ],
@@ -15826,7 +16303,8 @@
         "name": "chess-rook",
         "codepoint": "F085B",
         "aliases": [
-            "chess-castle"
+            "chess-castle",
+            "chess-tower"
         ],
         "tags": [
             "Gaming \/ RPG"
@@ -16819,6 +17297,24 @@
         "version": "4.3.95"
     },
     {
+        "id": "7C5309A2-5DA1-4393-8846-0CF5CB43BF88",
+        "name": "clipboard-minus",
+        "codepoint": "F1618",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "F83888C2-F7CF-423E-9101-2D9A49A6597B",
+        "name": "clipboard-minus-outline",
+        "codepoint": "F1619",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "8CD0EB09-AC6D-43C7-8DD6-4F2FD9A1DBC5",
         "name": "clipboard-multiple",
         "codepoint": "F1267",
@@ -16835,6 +17331,24 @@
         "tags": [],
         "author": "frankgrinaert",
         "version": "4.7.95"
+    },
+    {
+        "id": "376FB5C9-DF1A-455B-9824-5D0A3CE61481",
+        "name": "clipboard-off",
+        "codepoint": "F161A",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "86166B5D-05DD-423B-B10E-E67010AEBE58",
+        "name": "clipboard-off-outline",
+        "codepoint": "F161B",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "54F34575-7348-4032-B072-EC8F9A6C843D",
@@ -16928,6 +17442,42 @@
         "version": "2.1.99"
     },
     {
+        "id": "474C3746-90C6-456C-9B18-6101FFC8075B",
+        "name": "clipboard-remove",
+        "codepoint": "F161C",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "57C00F9A-7204-402F-9AF9-908A02C23681",
+        "name": "clipboard-remove-outline",
+        "codepoint": "F161D",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "785666E6-8CB0-4875-A289-1A9329614E69",
+        "name": "clipboard-search",
+        "codepoint": "F161E",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "9D8E08D1-6F72-4729-AF64-ED099D109B7D",
+        "name": "clipboard-search-outline",
+        "codepoint": "F161F",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "81453216-6EC0-4751-82A4-BFFF63B922FC",
         "name": "clipboard-text",
         "codepoint": "F014D",
@@ -16957,6 +17507,24 @@
         "version": "4.7.95"
     },
     {
+        "id": "237A2797-5013-4A50-9CB9-59FFEEC5BE4E",
+        "name": "clipboard-text-off",
+        "codepoint": "F1620",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "A5B09C9E-6430-4F6E-BA1C-D855ED6AB74C",
+        "name": "clipboard-text-off-outline",
+        "codepoint": "F1621",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "9C5136D5-E614-4DBD-AB36-EBB044178B6D",
         "name": "clipboard-text-outline",
         "codepoint": "F0A38",
@@ -16982,6 +17550,24 @@
         "tags": [],
         "author": "Michael Richins",
         "version": "3.2.89"
+    },
+    {
+        "id": "347494DF-0250-4F0E-9E64-23CB8F35B8C2",
+        "name": "clipboard-text-search",
+        "codepoint": "F1622",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "1E23BABF-F9E8-42C6-9199-0B3B6C43C290",
+        "name": "clipboard-text-search-outline",
+        "codepoint": "F1623",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "6B346FB6-F563-4AC4-B769-06A143B42152",
@@ -17505,8 +18091,7 @@
             "coins-close",
             "coins-remove",
             "clear-circle-multiple",
-            "multiply-circle-multiple",
-            "remove-circle-multiple"
+            "multiply-circle-multiple"
         ],
         "tags": [],
         "author": "Michael Irigoyen",
@@ -17580,7 +18165,8 @@
             "multiply-octagon",
             "remove-octagon",
             "cancel-octagon",
-            "clear-octagon"
+            "clear-octagon",
+            "stop-remove"
         ],
         "tags": [],
         "author": "Simran",
@@ -17594,7 +18180,8 @@
             "remove-octagon-outline",
             "multiply-octagon-outline",
             "clear-octagon-outline",
-            "cancel-octagon-outline"
+            "cancel-octagon-outline",
+            "stop-remove-outline"
         ],
         "tags": [],
         "author": "Simran",
@@ -19311,7 +19898,9 @@
         "id": "29F946C0-CA58-4287-AF0B-964961E5CC2C",
         "name": "content-save",
         "codepoint": "F0193",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc"
+        ],
         "tags": [],
         "author": "Google",
         "version": "1.5.54"
@@ -19320,7 +19909,9 @@
         "id": "E4BAD28B-B196-42B5-BD4D-92C81A8EADAE",
         "name": "content-save-alert",
         "codepoint": "F0F42",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-alert"
+        ],
         "tags": [
             "Alert \/ Error"
         ],
@@ -19331,7 +19922,9 @@
         "id": "21B9916D-3D1A-43AF-91B2-56A4D5C493C2",
         "name": "content-save-alert-outline",
         "codepoint": "F0F43",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-alert-outline"
+        ],
         "tags": [
             "Alert \/ Error"
         ],
@@ -19342,7 +19935,9 @@
         "id": "B9BE7889-D858-41A1-AB4E-9C58325261E9",
         "name": "content-save-all",
         "codepoint": "F0194",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-multiple"
+        ],
         "tags": [],
         "author": "Austin Andrews",
         "version": "1.5.54"
@@ -19351,7 +19946,9 @@
         "id": "B65ADBE9-DE1B-4879-A34F-602A3DA4D12A",
         "name": "content-save-all-outline",
         "codepoint": "F0F44",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-multiple-outline"
+        ],
         "tags": [],
         "author": "Michael Irigoyen",
         "version": "3.9.97"
@@ -19360,7 +19957,9 @@
         "id": "E909F872-44CC-4D23-8AD2-95BFE02A5E2D",
         "name": "content-save-cog",
         "codepoint": "F145B",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-cog"
+        ],
         "tags": [
             "Settings"
         ],
@@ -19371,7 +19970,9 @@
         "id": "A145BFEF-B18C-49C5-B24C-7918C878307E",
         "name": "content-save-cog-outline",
         "codepoint": "F145C",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-cog-outline"
+        ],
         "tags": [
             "Settings"
         ],
@@ -19382,7 +19983,9 @@
         "id": "12E2DE0D-BF3F-402D-8044-B18E269D32C2",
         "name": "content-save-edit",
         "codepoint": "F0CFB",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-edit"
+        ],
         "tags": [
             "Edit \/ Modify"
         ],
@@ -19393,7 +19996,9 @@
         "id": "B8D3719E-E67F-4008-9F43-458D75857769",
         "name": "content-save-edit-outline",
         "codepoint": "F0CFC",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-edit-outline"
+        ],
         "tags": [
             "Edit \/ Modify"
         ],
@@ -19404,7 +20009,9 @@
         "id": "FC4F757F-2540-4853-89A3-7FE07FC710C0",
         "name": "content-save-move",
         "codepoint": "F0E27",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-move"
+        ],
         "tags": [],
         "author": "Michael Richins",
         "version": "3.6.95"
@@ -19413,10 +20020,30 @@
         "id": "12F9DD45-1D74-45E3-84B7-CDE90A3FD174",
         "name": "content-save-move-outline",
         "codepoint": "F0E28",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-move-outline"
+        ],
         "tags": [],
         "author": "Michael Richins",
         "version": "3.6.95"
+    },
+    {
+        "id": "E5889AAE-7F3E-46F3-BEF6-36F4BE570DE8",
+        "name": "content-save-off",
+        "codepoint": "F1643",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "178D08A9-7C54-4F7A-9335-726030578718",
+        "name": "content-save-off-outline",
+        "codepoint": "F1644",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "707F4114-BD2F-4601-82C4-CFB6B2D2F359",
@@ -19431,7 +20058,9 @@
         "id": "67E755F6-209A-41EF-98C5-423739A3AC10",
         "name": "content-save-settings",
         "codepoint": "F061B",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-settings"
+        ],
         "tags": [
             "Settings"
         ],
@@ -19442,7 +20071,9 @@
         "id": "2EDEEDF4-2AE3-4365-8F49-DC6F869EC520",
         "name": "content-save-settings-outline",
         "codepoint": "F0B2E",
-        "aliases": [],
+        "aliases": [
+            "floppy-disc-settings-outline"
+        ],
         "tags": [
             "Settings"
         ],
@@ -19510,6 +20141,205 @@
         ],
         "author": "Google",
         "version": "1.5.54"
+    },
+    {
+        "id": "D37F1726-BDD9-4AFB-84E0-A62587AAA6CC",
+        "name": "cookie-alert",
+        "codepoint": "F16D0",
+        "aliases": [
+            "biscuit-alert"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "927FC7C7-8DF3-47FE-BAC4-7DF8DAF3F936",
+        "name": "cookie-alert-outline",
+        "codepoint": "F16D1",
+        "aliases": [
+            "biscuit-alert-outline"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "DB07C270-5421-41A3-BBFF-350874DE3534",
+        "name": "cookie-check",
+        "codepoint": "F16D2",
+        "aliases": [
+            "biscuit-check"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "65B2C1ED-992F-45D8-A0C0-4481F99748BF",
+        "name": "cookie-check-outline",
+        "codepoint": "F16D3",
+        "aliases": [
+            "biscuit-check-outline"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "5923CF0C-4D34-4BF1-8401-3AEEDC0DE9BC",
+        "name": "cookie-cog",
+        "codepoint": "F16D4",
+        "aliases": [
+            "biscuit-cog"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "96AE483D-C5CD-424A-A553-C9D5399CAD7F",
+        "name": "cookie-cog-outline",
+        "codepoint": "F16D5",
+        "aliases": [
+            "biscuit-cog-outline"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "215F338E-A35C-4C54-9AC7-C4F4BB9A7206",
+        "name": "cookie-minus",
+        "codepoint": "F16DA",
+        "aliases": [
+            "biscuit-minus"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "E5590F64-7B4E-4506-AF93-ED7F3E6AB988",
+        "name": "cookie-minus-outline",
+        "codepoint": "F16DB",
+        "aliases": [
+            "biscuit-minus-outline"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "AF77B3DF-8565-4A84-A58F-83FD2E55EB10",
+        "name": "cookie-outline",
+        "codepoint": "F16DE",
+        "aliases": [
+            "biscuit-outline"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "272BE458-B01F-4437-B083-65175B327D05",
+        "name": "cookie-plus",
+        "codepoint": "F16D6",
+        "aliases": [
+            "biscuit-plus"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "AB2BBE22-85B2-4D5B-9F99-099DE970A9EC",
+        "name": "cookie-plus-outline",
+        "codepoint": "F16D7",
+        "aliases": [
+            "biscuit-plus-outline"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "25272102-387C-4333-BF16-3308E6EFF94F",
+        "name": "cookie-remove",
+        "codepoint": "F16D8",
+        "aliases": [
+            "biscuit-remove"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "12200D0C-1B01-4165-A2D1-C5BE30B3E3A7",
+        "name": "cookie-remove-outline",
+        "codepoint": "F16D9",
+        "aliases": [
+            "biscuit-remove-outline"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "B8F9243C-188F-4EC1-9051-5BAA942D7F42",
+        "name": "cookie-settings",
+        "codepoint": "F16DC",
+        "aliases": [
+            "biscuit-settings",
+            "cookie-crumbs",
+            "biscuit-crumbs"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "FF72A11B-A9E5-47B7-967F-C520DC965CE2",
+        "name": "cookie-settings-outline",
+        "codepoint": "F16DD",
+        "aliases": [
+            "biscuit-settings-outline",
+            "cookie-crumbs-outline",
+            "biscuit-crumbs-outline"
+        ],
+        "tags": [
+            "Food \/ Drink"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "A260896B-178E-4E3A-9F2C-793AD68154F4",
@@ -19609,7 +20439,9 @@
         "id": "BC9DA934-ED6D-4EC4-9FA4-2B6FF26B3058",
         "name": "cpu-32-bit",
         "codepoint": "F0EDF",
-        "aliases": [],
+        "aliases": [
+            "chip-32-bit"
+        ],
         "tags": [],
         "author": "GreenTurtwig",
         "version": "3.8.95"
@@ -19618,7 +20450,9 @@
         "id": "BC47ABAD-66D6-4EEA-9512-CB33318F62EF",
         "name": "cpu-64-bit",
         "codepoint": "F0EE0",
-        "aliases": [],
+        "aliases": [
+            "chip-64-bit"
+        ],
         "tags": [],
         "author": "GreenTurtwig",
         "version": "3.8.95"
@@ -19845,6 +20679,28 @@
         "version": "1.7.12"
     },
     {
+        "id": "F768F993-4A1F-4A1E-8EED-11526704C22F",
+        "name": "credit-card-refresh",
+        "codepoint": "F1645",
+        "aliases": [],
+        "tags": [
+            "Banking"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "0ECF7DE7-9F12-4635-902C-1BBF1064DC21",
+        "name": "credit-card-refresh-outline",
+        "codepoint": "F1646",
+        "aliases": [],
+        "tags": [
+            "Banking"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "90A38F47-9EFD-4468-A1B9-E31A6781F69D",
         "name": "credit-card-refund",
         "codepoint": "F0FF3",
@@ -19911,6 +20767,28 @@
         "version": "1.5.54"
     },
     {
+        "id": "8E913524-BAAE-48B9-A45A-69192B159EE4",
+        "name": "credit-card-search",
+        "codepoint": "F1647",
+        "aliases": [],
+        "tags": [
+            "Banking"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "8A0B7BE3-D653-4009-8E42-B3E280F7152C",
+        "name": "credit-card-search-outline",
+        "codepoint": "F1648",
+        "aliases": [],
+        "tags": [
+            "Banking"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "194059D5-3FF9-4DA7-8C7E-81092D38889B",
         "name": "credit-card-settings",
         "codepoint": "F0FF5",
@@ -19935,6 +20813,28 @@
         ],
         "author": "Peter Noble",
         "version": "2.3.50"
+    },
+    {
+        "id": "76407FAE-6EB4-4486-9A60-5D62801B78E4",
+        "name": "credit-card-sync",
+        "codepoint": "F1649",
+        "aliases": [],
+        "tags": [
+            "Banking"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "FB29966A-E0BE-41FC-92D0-4218B160DCF4",
+        "name": "credit-card-sync-outline",
+        "codepoint": "F164A",
+        "aliases": [],
+        "tags": [
+            "Banking"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "7894F13C-362E-4628-B0D4-E9AC990CCB41",
@@ -20902,6 +21802,116 @@
         "version": "1.5.54"
     },
     {
+        "id": "7B3AB47E-C134-4AE9-82A2-DD0F95D6EF3F",
+        "name": "database-alert",
+        "codepoint": "F163A",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "27B8C966-DE22-4B45-99A6-5CF769BECD07",
+        "name": "database-alert-outline",
+        "codepoint": "F1624",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "82BC4255-42E2-4B69-ADE4-A3519DE84E22",
+        "name": "database-arrow-down",
+        "codepoint": "F163B",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "8A490A09-A803-4333-BB10-5758643AD4F4",
+        "name": "database-arrow-down-outline",
+        "codepoint": "F1625",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "FB778AE2-E52D-4C2A-BEF7-C48A805F8A57",
+        "name": "database-arrow-left",
+        "codepoint": "F163C",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "A51D37EB-0B92-4F4A-8402-E0C33825D05B",
+        "name": "database-arrow-left-outline",
+        "codepoint": "F1626",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "AE5DDB91-CE2C-4EE3-8247-E4818F488EE0",
+        "name": "database-arrow-right",
+        "codepoint": "F163D",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "097A9369-2179-49DB-891C-5A61C88A985C",
+        "name": "database-arrow-right-outline",
+        "codepoint": "F1627",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "EC1BF4CB-2B6B-4B69-96E6-599E77D02885",
+        "name": "database-arrow-up",
+        "codepoint": "F163E",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "2E041168-F122-45CC-84AD-2A05428C211A",
+        "name": "database-arrow-up-outline",
+        "codepoint": "F1628",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "C241F52F-EA70-4784-9455-AA7D05663C90",
         "name": "database-check",
         "codepoint": "F0AA9",
@@ -20914,6 +21924,61 @@
         ],
         "author": "Andrew Nenakhov",
         "version": "2.7.94"
+    },
+    {
+        "id": "1B7F6C62-E464-42F6-B7C0-CDD637A520F6",
+        "name": "database-check-outline",
+        "codepoint": "F1629",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "1401D168-E1ED-403A-9154-F89133195BF9",
+        "name": "database-clock",
+        "codepoint": "F163F",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "093C4D34-DC23-4FE7-9AD0-05FCFFBB41A6",
+        "name": "database-clock-outline",
+        "codepoint": "F162A",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "2D941DD1-7B07-4E4B-B164-42AF6F751D34",
+        "name": "database-cog",
+        "codepoint": "F164B",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "A15AD70B-D874-46B1-BD26-2A5627DBF201",
+        "name": "database-cog-outline",
+        "codepoint": "F164C",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "A9C5BB4C-C89F-4ADE-80C2-FB39A942DE6A",
@@ -20929,6 +21994,17 @@
         "version": "3.0.39"
     },
     {
+        "id": "6428E607-E036-481B-AF42-B09894C68E19",
+        "name": "database-edit-outline",
+        "codepoint": "F162B",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "6E50F0F8-1116-4090-9468-54B2CE8FBB19",
         "name": "database-export",
         "codepoint": "F095E",
@@ -20941,6 +22017,17 @@
         "version": "2.4.85"
     },
     {
+        "id": "E620893F-9644-4E75-8904-C81B85B6D58D",
+        "name": "database-export-outline",
+        "codepoint": "F162C",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "733A4C8A-FAA5-42BE-882E-98EC734E8493",
         "name": "database-import",
         "codepoint": "F095D",
@@ -20951,6 +22038,17 @@
         ],
         "author": "Michael Richins",
         "version": "2.4.85"
+    },
+    {
+        "id": "4D0E6B34-7EAB-4EC4-9782-F2318139A3E2",
+        "name": "database-import-outline",
+        "codepoint": "F162D",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "3A6B098D-F7AD-4D2C-A039-201319B5FDD7",
@@ -20966,6 +22064,17 @@
         "version": "2.7.94"
     },
     {
+        "id": "A03B26F4-54BB-4E3D-B4E7-EAFE3351A6BA",
+        "name": "database-lock-outline",
+        "codepoint": "F162E",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "91AD02DB-7EBD-4B39-AACB-8037B50728AC",
         "name": "database-marker",
         "codepoint": "F12F6",
@@ -20978,6 +22087,17 @@
         "version": "4.8.95"
     },
     {
+        "id": "163262B4-672A-4194-B002-3F414DF6C7A5",
+        "name": "database-marker-outline",
+        "codepoint": "F162F",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "31CE0431-ABF2-4650-8439-515C0E9012CD",
         "name": "database-minus",
         "codepoint": "F01BB",
@@ -20988,6 +22108,50 @@
         ],
         "author": "Simran",
         "version": "1.5.54"
+    },
+    {
+        "id": "96D5DD75-E7C1-444F-AD36-AB601BB9C504",
+        "name": "database-minus-outline",
+        "codepoint": "F1630",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "5E0B7DCE-B912-4789-A0F9-86DBA5D27DBE",
+        "name": "database-off",
+        "codepoint": "F1640",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "4DD86D39-4EC5-44BD-BA05-AA763999E390",
+        "name": "database-off-outline",
+        "codepoint": "F1631",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "76AAFFAC-C2C7-4375-A175-765848BF08AA",
+        "name": "database-outline",
+        "codepoint": "F1632",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "940D2514-B309-4CE0-A2E4-D02121415CA3",
@@ -21004,6 +22168,17 @@
         "version": "1.5.54"
     },
     {
+        "id": "2250D162-41A7-4852-B3E2-555180A5A57C",
+        "name": "database-plus-outline",
+        "codepoint": "F1633",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "C43C676A-F2BE-489A-8613-BE6EF651F0AC",
         "name": "database-refresh",
         "codepoint": "F05C2",
@@ -21013,6 +22188,17 @@
         ],
         "author": "Contributors",
         "version": "1.5.54"
+    },
+    {
+        "id": "03B12B1B-7AF3-42C7-89CA-482DC21F12CE",
+        "name": "database-refresh-outline",
+        "codepoint": "F1634",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "20B59D03-2EF5-4C5D-BB00-2CC611297AC0",
@@ -21025,6 +22211,17 @@
         ],
         "author": "Michael Richins",
         "version": "3.3.92"
+    },
+    {
+        "id": "32FBEA36-9F09-4D8D-A355-2DD6FB2AA837",
+        "name": "database-remove-outline",
+        "codepoint": "F1635",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "58E36A40-053B-42EB-8879-9CB0948B58D4",
@@ -21041,6 +22238,17 @@
         "version": "2.1.99"
     },
     {
+        "id": "EFAB71E6-7F67-40B9-B388-0B4AFFC6B799",
+        "name": "database-search-outline",
+        "codepoint": "F1636",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "CBD96BE0-807C-4102-AC0B-AEFFE4D322F7",
         "name": "database-settings",
         "codepoint": "F0D01",
@@ -21054,6 +22262,17 @@
         "version": "3.3.92"
     },
     {
+        "id": "9AB5AF13-E028-49FA-B81E-EFFF8A8EB144",
+        "name": "database-settings-outline",
+        "codepoint": "F1637",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "5E954303-C1CF-406B-A9B5-A72E5C25E499",
         "name": "database-sync",
         "codepoint": "F0CFF",
@@ -21064,6 +22283,17 @@
         ],
         "author": "Michael Richins",
         "version": "3.3.92"
+    },
+    {
+        "id": "9E1F0B0A-332A-473D-8CA2-DD30E03E76B9",
+        "name": "database-sync-outline",
+        "codepoint": "F1638",
+        "aliases": [],
+        "tags": [
+            "Database"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "309A4ABA-E450-437D-8AD1-EE6A850D421B",
@@ -21438,7 +22668,9 @@
         "codepoint": "F01B3",
         "aliases": [
             "trash-variant",
-            "bin-variant"
+            "bin-variant",
+            "cup-ice",
+            "drink-ice"
         ],
         "tags": [],
         "author": "Austin Andrews",
@@ -23723,6 +24955,24 @@
         "version": "4.3.95"
     },
     {
+        "id": "AB3FC883-2737-4D9D-AAF4-3695BD6C7882",
+        "name": "email-remove",
+        "codepoint": "F1661",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "5EDCFB59-BBEC-407A-B079-5EC7E7686800",
+        "name": "email-remove-outline",
+        "codepoint": "F1662",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "AE2AF6F2-9E5A-4949-901F-0B5F599428C7",
         "name": "email-search",
         "codepoint": "F0961",
@@ -23820,7 +25070,8 @@
         "name": "emoticon",
         "codepoint": "F0C68",
         "aliases": [
-            "smiley"
+            "smiley",
+            "face"
         ],
         "tags": [
             "Emoji"
@@ -23833,7 +25084,8 @@
         "name": "emoticon-angry",
         "codepoint": "F0C69",
         "aliases": [
-            "smiley-angry"
+            "smiley-angry",
+            "face-angry"
         ],
         "tags": [
             "Emoji"
@@ -23846,7 +25098,8 @@
         "name": "emoticon-angry-outline",
         "codepoint": "F0C6A",
         "aliases": [
-            "smiley-angry-outline"
+            "smiley-angry-outline",
+            "face-angry-outline"
         ],
         "tags": [
             "Emoji"
@@ -23858,7 +25111,9 @@
         "id": "DD5A65E9-E309-457F-9662-94AAB236A703",
         "name": "emoticon-confused",
         "codepoint": "F10DE",
-        "aliases": [],
+        "aliases": [
+            "face-confused"
+        ],
         "tags": [
             "Emoji"
         ],
@@ -23869,7 +25124,9 @@
         "id": "CB195387-50AC-46A3-B1C4-F3DA96E0EE42",
         "name": "emoticon-confused-outline",
         "codepoint": "F10DF",
-        "aliases": [],
+        "aliases": [
+            "face-confused-outline"
+        ],
         "tags": [
             "Emoji"
         ],
@@ -23881,7 +25138,9 @@
         "name": "emoticon-cool",
         "codepoint": "F0C6B",
         "aliases": [
-            "smiley-cool"
+            "smiley-cool",
+            "face-cool",
+            "face-sunglasses"
         ],
         "tags": [
             "Emoji"
@@ -23894,7 +25153,9 @@
         "name": "emoticon-cool-outline",
         "codepoint": "F01F3",
         "aliases": [
-            "smiley-cool-outline"
+            "smiley-cool-outline",
+            "face-cool-outline",
+            "face-sunglasses-outline"
         ],
         "tags": [
             "Emoji"
@@ -23907,7 +25168,8 @@
         "name": "emoticon-cry",
         "codepoint": "F0C6C",
         "aliases": [
-            "smiley-cry"
+            "smiley-cry",
+            "face-cry"
         ],
         "tags": [
             "Emoji"
@@ -23920,7 +25182,8 @@
         "name": "emoticon-cry-outline",
         "codepoint": "F0C6D",
         "aliases": [
-            "smiley-cry-outline"
+            "smiley-cry-outline",
+            "face-cry-outline"
         ],
         "tags": [
             "Emoji"
@@ -23933,7 +25196,8 @@
         "name": "emoticon-dead",
         "codepoint": "F0C6E",
         "aliases": [
-            "smiley-dead"
+            "smiley-dead",
+            "face-dead"
         ],
         "tags": [
             "Emoji"
@@ -23946,7 +25210,8 @@
         "name": "emoticon-dead-outline",
         "codepoint": "F069B",
         "aliases": [
-            "smiley-dead-outline"
+            "smiley-dead-outline",
+            "face-dead-outline"
         ],
         "tags": [
             "Emoji"
@@ -23959,7 +25224,8 @@
         "name": "emoticon-devil",
         "codepoint": "F0C6F",
         "aliases": [
-            "smiley-devil"
+            "smiley-devil",
+            "face-devil"
         ],
         "tags": [
             "Emoji"
@@ -23972,7 +25238,8 @@
         "name": "emoticon-devil-outline",
         "codepoint": "F01F4",
         "aliases": [
-            "smiley-devil-outline"
+            "smiley-devil-outline",
+            "face-devil-outline"
         ],
         "tags": [
             "Emoji"
@@ -23985,7 +25252,8 @@
         "name": "emoticon-excited",
         "codepoint": "F0C70",
         "aliases": [
-            "smiley-excited"
+            "smiley-excited",
+            "face-excited"
         ],
         "tags": [
             "Emoji"
@@ -23998,7 +25266,8 @@
         "name": "emoticon-excited-outline",
         "codepoint": "F069C",
         "aliases": [
-            "smiley-excited-outline"
+            "smiley-excited-outline",
+            "face-excited-outline"
         ],
         "tags": [
             "Emoji"
@@ -24010,7 +25279,9 @@
         "id": "D5AC778B-0269-4AC5-A2D8-FD5F4D27785F",
         "name": "emoticon-frown",
         "codepoint": "F0F4C",
-        "aliases": [],
+        "aliases": [
+            "face-frown"
+        ],
         "tags": [
             "Emoji"
         ],
@@ -24021,7 +25292,9 @@
         "id": "AE6333C6-8334-4F90-9230-6527F3A38C8A",
         "name": "emoticon-frown-outline",
         "codepoint": "F0F4D",
-        "aliases": [],
+        "aliases": [
+            "face-frown-outline"
+        ],
         "tags": [
             "Emoji"
         ],
@@ -24033,7 +25306,8 @@
         "name": "emoticon-happy",
         "codepoint": "F0C71",
         "aliases": [
-            "smiley-happy"
+            "smiley-happy",
+            "face-happy"
         ],
         "tags": [
             "Emoji"
@@ -24046,7 +25320,8 @@
         "name": "emoticon-happy-outline",
         "codepoint": "F01F5",
         "aliases": [
-            "smiley-happy-outline"
+            "smiley-happy-outline",
+            "face-happy-outline"
         ],
         "tags": [
             "Emoji"
@@ -24059,7 +25334,8 @@
         "name": "emoticon-kiss",
         "codepoint": "F0C72",
         "aliases": [
-            "smiley-kiss"
+            "smiley-kiss",
+            "face-kiss"
         ],
         "tags": [
             "Emoji"
@@ -24072,7 +25348,8 @@
         "name": "emoticon-kiss-outline",
         "codepoint": "F0C73",
         "aliases": [
-            "smiley-kiss-outline"
+            "smiley-kiss-outline",
+            "face-kiss-outline"
         ],
         "tags": [
             "Emoji"
@@ -24084,7 +25361,9 @@
         "id": "11CEDEB3-DB1A-45F4-92C9-6AF6FCEE4FC5",
         "name": "emoticon-lol",
         "codepoint": "F1214",
-        "aliases": [],
+        "aliases": [
+            "face-lol"
+        ],
         "tags": [
             "Emoji"
         ],
@@ -24095,7 +25374,9 @@
         "id": "2A7BA4B1-C436-4EE6-BF5A-34B150A9A746",
         "name": "emoticon-lol-outline",
         "codepoint": "F1215",
-        "aliases": [],
+        "aliases": [
+            "face-lol-outline"
+        ],
         "tags": [
             "Emoji"
         ],
@@ -24107,7 +25388,8 @@
         "name": "emoticon-neutral",
         "codepoint": "F0C74",
         "aliases": [
-            "smiley-neutral"
+            "smiley-neutral",
+            "face-neutral"
         ],
         "tags": [
             "Emoji"
@@ -24120,7 +25402,8 @@
         "name": "emoticon-neutral-outline",
         "codepoint": "F01F6",
         "aliases": [
-            "smiley-neutral-outline"
+            "smiley-neutral-outline",
+            "face-neutral-outline"
         ],
         "tags": [
             "Emoji"
@@ -24137,7 +25420,8 @@
             "mood",
             "sentiment-very-satisfied",
             "tag-faces",
-            "smiley-outline"
+            "smiley-outline",
+            "face-outline"
         ],
         "tags": [
             "Emoji"
@@ -24150,7 +25434,8 @@
         "name": "emoticon-poop",
         "codepoint": "F01F7",
         "aliases": [
-            "smiley-poop"
+            "smiley-poop",
+            "face-poop"
         ],
         "tags": [
             "Emoji"
@@ -24162,7 +25447,9 @@
         "id": "1E402C80-69DB-432F-BB0F-C05ACB6A7839",
         "name": "emoticon-poop-outline",
         "codepoint": "F0C75",
-        "aliases": [],
+        "aliases": [
+            "face-poop-outline"
+        ],
         "tags": [
             "Emoji"
         ],
@@ -24174,7 +25461,8 @@
         "name": "emoticon-sad",
         "codepoint": "F0C76",
         "aliases": [
-            "smiley-sad"
+            "smiley-sad",
+            "face-sad"
         ],
         "tags": [
             "Emoji"
@@ -24187,7 +25475,8 @@
         "name": "emoticon-sad-outline",
         "codepoint": "F01F8",
         "aliases": [
-            "smiley-sad-outline"
+            "smiley-sad-outline",
+            "face-sad-outline"
         ],
         "tags": [
             "Emoji"
@@ -24199,7 +25488,10 @@
         "id": "523F5AB1-3598-40F1-AAB5-6DF361FF6970",
         "name": "emoticon-sick",
         "codepoint": "F157C",
-        "aliases": [],
+        "aliases": [
+            "face-sick",
+            "fever"
+        ],
         "tags": [
             "Emoji",
             "Medical \/ Hospital"
@@ -24211,7 +25503,10 @@
         "id": "CBB4F1C3-3479-4F94-9F15-3D844889609A",
         "name": "emoticon-sick-outline",
         "codepoint": "F157D",
-        "aliases": [],
+        "aliases": [
+            "face-sick-outline",
+            "fever-outline"
+        ],
         "tags": [
             "Emoji",
             "Medical \/ Hospital"
@@ -24224,7 +25519,8 @@
         "name": "emoticon-tongue",
         "codepoint": "F01F9",
         "aliases": [
-            "smiley-tongue"
+            "smiley-tongue",
+            "face-tongue"
         ],
         "tags": [
             "Emoji"
@@ -24237,7 +25533,8 @@
         "name": "emoticon-tongue-outline",
         "codepoint": "F0C77",
         "aliases": [
-            "smiley-tongue-outline"
+            "smiley-tongue-outline",
+            "face-tongue-outline"
         ],
         "tags": [
             "Emoji"
@@ -24250,7 +25547,8 @@
         "name": "emoticon-wink",
         "codepoint": "F0C78",
         "aliases": [
-            "smiley-wink"
+            "smiley-wink",
+            "face-wink"
         ],
         "tags": [
             "Emoji"
@@ -24263,7 +25561,8 @@
         "name": "emoticon-wink-outline",
         "codepoint": "F0C79",
         "aliases": [
-            "smiley-wink-outline"
+            "smiley-wink-outline",
+            "face-wink-outline"
         ],
         "tags": [
             "Emoji"
@@ -25513,7 +26812,9 @@
         "id": "325210DA-E889-4CBD-B0A7-8A32D706322B",
         "name": "fencing",
         "codepoint": "F14C1",
-        "aliases": [],
+        "aliases": [
+            "sword-fight"
+        ],
         "tags": [
             "Sport"
         ],
@@ -27528,7 +28829,9 @@
         "id": "8F4F8B2A-9E7D-432F-978E-F3F108DA701B",
         "name": "flare",
         "codepoint": "F0D72",
-        "aliases": [],
+        "aliases": [
+            "star"
+        ],
         "tags": [],
         "author": "Google",
         "version": "3.4.93"
@@ -31855,6 +33158,28 @@
         "version": "2.5.94"
     },
     {
+        "id": "9B371D94-3C53-410F-A4A5-024415B30244",
+        "name": "ghost-off-outline",
+        "codepoint": "F165C",
+        "aliases": [],
+        "tags": [
+            "Gaming \/ RPG"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "71BF426E-71FE-4AEC-946A-A2CCAC371C31",
+        "name": "ghost-outline",
+        "codepoint": "F165D",
+        "aliases": [],
+        "tags": [
+            "Gaming \/ RPG"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "7FCFB449-8096-408A-88E4-B73343DB201F",
         "name": "gif",
         "codepoint": "F0D78",
@@ -33723,6 +35048,24 @@
         "version": "2.4.85"
     },
     {
+        "id": "759FA294-1DB6-4B54-BA13-AD852764E3C9",
+        "name": "heart-cog",
+        "codepoint": "F1663",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "A28DF1A9-5A1F-49AB-959D-249313639228",
+        "name": "heart-cog-outline",
+        "codepoint": "F1664",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "9B033C3C-210D-4EFD-AD4E-FF9E36E44509",
         "name": "heart-flash",
         "codepoint": "F0EF9",
@@ -33892,6 +35235,24 @@
         "tags": [],
         "author": "Michael Irigoyen",
         "version": "5.2.45"
+    },
+    {
+        "id": "E0A4635A-2115-425E-8103-4C88CBDB10F3",
+        "name": "heart-settings",
+        "codepoint": "F1665",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "9B32C2D5-B2BE-4646-9C41-53F10F7C1628",
+        "name": "heart-settings-outline",
+        "codepoint": "F1666",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "47397A0C-273D-4D13-A4FD-61572F3E4953",
@@ -34108,7 +35469,9 @@
         "id": "A965D069-BF40-4F96-B64D-6C1C93F0E2E3",
         "name": "hexagram",
         "codepoint": "F0AC9",
-        "aliases": [],
+        "aliases": [
+            "star"
+        ],
         "tags": [
             "Shape"
         ],
@@ -34119,7 +35482,9 @@
         "id": "C1F53791-B46C-4327-B355-AF3175766CB8",
         "name": "hexagram-outline",
         "codepoint": "F0ACA",
-        "aliases": [],
+        "aliases": [
+            "star-outline"
+        ],
         "tags": [
             "Shape"
         ],
@@ -34976,7 +36341,8 @@
         "name": "hospital",
         "codepoint": "F0FF6",
         "aliases": [
-            "swiss-cross"
+            "swiss-cross",
+            "dispensary"
         ],
         "tags": [
             "Medical \/ Hospital"
@@ -34990,7 +36356,8 @@
         "codepoint": "F02E0",
         "aliases": [
             "local-hospital",
-            "swiss-cross-box"
+            "swiss-cross-box",
+            "dispensary-box"
         ],
         "tags": [
             "Medical \/ Hospital"
@@ -35003,7 +36370,8 @@
         "name": "hospital-box-outline",
         "codepoint": "F0FF7",
         "aliases": [
-            "swiss-cross-box-outline"
+            "swiss-cross-box-outline",
+            "dispensary-box-outline"
         ],
         "tags": [
             "Medical \/ Hospital"
@@ -35718,7 +37086,8 @@
         "name": "image-album",
         "codepoint": "F02EA",
         "aliases": [
-            "photo-album"
+            "photo-album",
+            "book-image"
         ],
         "tags": [],
         "author": "Google",
@@ -38704,7 +40073,11 @@
         "name": "lock",
         "codepoint": "F033E",
         "aliases": [
-            "https"
+            "https",
+            "password",
+            "secure",
+            "protected",
+            "encryption"
         ],
         "tags": [
             "Lock",
@@ -38719,7 +40092,11 @@
         "name": "lock-alert",
         "codepoint": "F08EE",
         "aliases": [
-            "lock-warning"
+            "lock-warning",
+            "password-alert",
+            "encryption-alert",
+            "password-warning",
+            "encryption-warning"
         ],
         "tags": [
             "Lock",
@@ -38733,9 +40110,17 @@
         "id": "6DE0B795-B0C1-4CFC-A47E-0D1C3A203248",
         "name": "lock-alert-outline",
         "codepoint": "F15D1",
-        "aliases": [],
+        "aliases": [
+            "lock-warning-outline",
+            "password-alert-outline",
+            "encryption-alert-outline",
+            "password-warning-outline",
+            "encryption-warning-outline"
+        ],
         "tags": [
-            "Home Automation"
+            "Home Automation",
+            "Alert \/ Error",
+            "Lock"
         ],
         "author": "Michael Irigoyen",
         "version": "5.6.55"
@@ -38744,17 +40129,47 @@
         "id": "CA254138-2001-4A37-8D52-E65D608E0E10",
         "name": "lock-check",
         "codepoint": "F139A",
-        "aliases": [],
-        "tags": [],
+        "aliases": [
+            "password-check",
+            "password-secure",
+            "encryption-check",
+            "encryption-secure",
+            "password-verified",
+            "encryption-verified"
+        ],
+        "tags": [
+            "Lock"
+        ],
         "author": "Fran\u00e7ois Risoud",
         "version": "5.0.45"
+    },
+    {
+        "id": "4A17CD48-4EFA-41A5-9A40-4BF9C01F2B18",
+        "name": "lock-check-outline",
+        "codepoint": "F16A8",
+        "aliases": [
+            "password-check-outline",
+            "password-secure-outline",
+            "encryption-check-outline",
+            "encryption-secure-outline",
+            "password-verified-outline",
+            "encryption-verified-outline"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "C16C2563-9EA4-4545-9CF4-56C5EA9FD9F9",
         "name": "lock-clock",
         "codepoint": "F097F",
         "aliases": [
-            "confidential-mode"
+            "confidential-mode",
+            "password-clock",
+            "password-expiration",
+            "encryption-expiration"
         ],
         "tags": [
             "Lock",
@@ -38764,10 +40179,73 @@
         "version": "2.4.85"
     },
     {
+        "id": "1C00C37C-183D-41D7-ACEF-18ACFF70DE80",
+        "name": "lock-minus",
+        "codepoint": "F16A9",
+        "aliases": [
+            "password-minus",
+            "encryption-minus"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "073A5F44-B5D1-4112-AD20-1F86F94ADF60",
+        "name": "lock-minus-outline",
+        "codepoint": "F16AA",
+        "aliases": [
+            "password-minus-outline",
+            "encryption-minus"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "481E2C2A-E70D-4323-867E-5632966B9555",
+        "name": "lock-off",
+        "codepoint": "F1671",
+        "aliases": [
+            "password-off",
+            "not-protected",
+            "unsecure",
+            "encryption-off"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "AAC1BB51-BA46-4FB6-B901-F602E7C55351",
+        "name": "lock-off-outline",
+        "codepoint": "F1672",
+        "aliases": [
+            "password-off-outline",
+            "unsecure-outline",
+            "not-protected-outline",
+            "encryption-off-outline"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "E357D5CD-7E42-463B-899A-7D7B038A3E31",
         "name": "lock-open",
         "codepoint": "F033F",
-        "aliases": [],
+        "aliases": [
+            "unlocked",
+            "decrypted"
+        ],
         "tags": [
             "Lock",
             "Home Automation",
@@ -38780,10 +40258,17 @@
         "id": "D8707612-8DFB-4F83-9FAE-2058254A651F",
         "name": "lock-open-alert",
         "codepoint": "F139B",
-        "aliases": [],
+        "aliases": [
+            "unlocked-alert",
+            "decrypted-alert",
+            "lock-open-warning",
+            "unlocked-warning",
+            "decrypted-warning"
+        ],
         "tags": [
             "Alert \/ Error",
-            "Home Automation"
+            "Home Automation",
+            "Lock"
         ],
         "author": "Fran\u00e7ois Risoud",
         "version": "5.0.45"
@@ -38792,9 +40277,17 @@
         "id": "47EFC7F8-698E-4466-8EDE-DB6334FE6C18",
         "name": "lock-open-alert-outline",
         "codepoint": "F15D2",
-        "aliases": [],
+        "aliases": [
+            "unlocked-alert-outline",
+            "lock-open-warning-outline",
+            "decrypted-alert-outline",
+            "unlocked-warning-outline",
+            "decrypted-warning-outline"
+        ],
         "tags": [
-            "Home Automation"
+            "Home Automation",
+            "Alert \/ Error",
+            "Lock"
         ],
         "author": "Michael Irigoyen",
         "version": "5.6.55"
@@ -38803,16 +40296,66 @@
         "id": "5ED06AF8-75C7-4AC3-962E-F742236AFDA6",
         "name": "lock-open-check",
         "codepoint": "F139C",
-        "aliases": [],
-        "tags": [],
+        "aliases": [
+            "unlocked-check",
+            "decrypted-check"
+        ],
+        "tags": [
+            "Lock"
+        ],
         "author": "Fran\u00e7ois Risoud",
         "version": "5.0.45"
+    },
+    {
+        "id": "FA8CFB4F-319F-42BE-8615-B4FECDA27719",
+        "name": "lock-open-check-outline",
+        "codepoint": "F16AB",
+        "aliases": [
+            "unlocked-check-outline",
+            "decrypted-check-outline"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "5487A862-47C1-445A-B6F4-16AAAD6D058B",
+        "name": "lock-open-minus",
+        "codepoint": "F16AC",
+        "aliases": [
+            "unlocked-minus",
+            "decrypted-minus"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "A268FC79-9328-4B33-A734-9A4614BB3776",
+        "name": "lock-open-minus-outline",
+        "codepoint": "F16AD",
+        "aliases": [
+            "unlocked-minus-outline",
+            "decrypted-minus-outline"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "DCE8B967-BCDE-4130-8BF3-DDA78A78326F",
         "name": "lock-open-outline",
         "codepoint": "F0340",
-        "aliases": [],
+        "aliases": [
+            "unlocked-outline",
+            "decrypted-outline"
+        ],
         "tags": [
             "Lock",
             "Home Automation",
@@ -38822,10 +40365,75 @@
         "version": "1.5.54"
     },
     {
+        "id": "8062D7E8-C9C1-42E1-B42F-E5A9618F1DCD",
+        "name": "lock-open-plus",
+        "codepoint": "F16AE",
+        "aliases": [
+            "unlocked-plus",
+            "decrypted-plus",
+            "lock-open-add",
+            "unlocked-add",
+            "decrypted-add"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "804F39C9-F4EB-4663-8EA6-67F668C8CCDF",
+        "name": "lock-open-plus-outline",
+        "codepoint": "F16AF",
+        "aliases": [
+            "unlocked-plus-outline",
+            "lock-open-add-outline",
+            "unlocked-add-outline",
+            "decrypted-plus-outline",
+            "decrypted-add-outline"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "DBA50293-BCD6-4CC6-81E7-E63AF1EB56AE",
+        "name": "lock-open-remove",
+        "codepoint": "F16B0",
+        "aliases": [
+            "unlocked-remove",
+            "decrypted-remove"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "73C80D40-9B24-42A8-A22A-94DDE61DDCFC",
+        "name": "lock-open-remove-outline",
+        "codepoint": "F16B1",
+        "aliases": [
+            "unlocked-remove-outline",
+            "decrypted-remove-outline"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "4171E1EE-CA1A-4885-B41B-3EAE135BA8FE",
         "name": "lock-open-variant",
         "codepoint": "F0FC6",
-        "aliases": [],
+        "aliases": [
+            "unlocked-variant",
+            "decrypted-variant"
+        ],
         "tags": [
             "Lock",
             "Home Automation"
@@ -38837,7 +40445,10 @@
         "id": "D3253799-FA57-4E62-967B-088FD6F1BF62",
         "name": "lock-open-variant-outline",
         "codepoint": "F0FC7",
-        "aliases": [],
+        "aliases": [
+            "unlocked-variant-outline",
+            "decrypted-variant-outline"
+        ],
         "tags": [
             "Lock",
             "Home Automation"
@@ -38849,7 +40460,13 @@
         "id": "86AD97CA-6028-45C2-8C9A-8C4A562A8E49",
         "name": "lock-outline",
         "codepoint": "F0341",
-        "aliases": [],
+        "aliases": [
+            "password-outline",
+            "secure-outline",
+            "https-outline",
+            "protected-outline",
+            "encryption-outline"
+        ],
         "tags": [
             "Lock",
             "Home Automation",
@@ -38873,20 +40490,43 @@
         "codepoint": "F05FB",
         "aliases": [
             "enhanced-encryption",
-            "lock-add"
+            "lock-add",
+            "encryption-add",
+            "password-add",
+            "password-plus",
+            "encryption-plus"
         ],
         "tags": [
             "Lock"
         ],
-        "author": "Google",
+        "author": "Colton Wiscombe",
         "version": "1.5.54"
+    },
+    {
+        "id": "A4B343ED-8C07-4BD5-9F01-B360F971D23C",
+        "name": "lock-plus-outline",
+        "codepoint": "F16B2",
+        "aliases": [
+            "lock-add-outline",
+            "password-plus-outline",
+            "password-add-outline",
+            "encryption-plus-outline",
+            "encryption-add-outline"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "390C2479-98DD-46FB-AA39-CD816E7982C8",
         "name": "lock-question",
         "codepoint": "F08EF",
         "aliases": [
-            "forgot-password"
+            "forgot-password",
+            "password-question",
+            "encryption-question"
         ],
         "tags": [
             "Lock"
@@ -38895,11 +40535,40 @@
         "version": "2.3.50"
     },
     {
+        "id": "201B2126-8481-413A-884F-BE6C8C62D531",
+        "name": "lock-remove",
+        "codepoint": "F16B3",
+        "aliases": [
+            "password-remove",
+            "encryption-remove"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "D5069461-8385-4424-8E19-CE2BEF2C1BAC",
+        "name": "lock-remove-outline",
+        "codepoint": "F16B4",
+        "aliases": [
+            "password-remove-outline",
+            "encryption-remove-outline"
+        ],
+        "tags": [
+            "Lock"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "82312B48-E128-494E-9D84-DAACB41986F4",
         "name": "lock-reset",
         "codepoint": "F0773",
         "aliases": [
-            "password-reset"
+            "password-reset",
+            "encryption-reset"
         ],
         "tags": [
             "Lock"
@@ -40149,7 +41818,9 @@
         "id": "E404434E-17DB-4E90-9D97-5355258E1FCF",
         "name": "memory",
         "codepoint": "F035B",
-        "aliases": [],
+        "aliases": [
+            "chip"
+        ],
         "tags": [],
         "author": "Google",
         "version": "1.5.54"
@@ -40538,6 +42209,24 @@
         "tags": [],
         "author": "Michael Irigoyen",
         "version": "4.4.95"
+    },
+    {
+        "id": "1F9E05D2-75B6-4039-B0A8-9EF2B647882E",
+        "name": "message-off",
+        "codepoint": "F164D",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "2B210400-A3CE-4EE4-8A9B-A88ACDF47061",
+        "name": "message-off-outline",
+        "codepoint": "F164E",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "2AE3707D-5DE3-41E6-968B-A56D3D9ADD40",
@@ -41460,7 +43149,8 @@
             "remove-circle",
             "do-not-enter",
             "pill-tablet",
-            "medicine"
+            "medicine",
+            "pharmaceutical"
         ],
         "tags": [
             "Transportation + Road",
@@ -41526,7 +43216,8 @@
             "do-not-enter-outline",
             "do-not-disturb-outline",
             "pill-tablet-outline",
-            "medicine-outline"
+            "medicine-outline",
+            "pharmaceutical"
         ],
         "tags": [
             "Transportation + Road",
@@ -41552,6 +43243,15 @@
         "tags": [],
         "author": "Michael Irigoyen",
         "version": "3.2.89"
+    },
+    {
+        "id": "7761450F-6D9D-452D-B604-1853124C09E2",
+        "name": "minus-thick",
+        "codepoint": "F1639",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "AB90BAF0-E671-4418-9CBB-74C3F03A94DB",
@@ -42209,7 +43909,11 @@
         "id": "EBABD564-B269-4D31-995B-062C7EBEFC15",
         "name": "movie-edit",
         "codepoint": "F1122",
-        "aliases": [],
+        "aliases": [
+            "slate-edit",
+            "clapperboard-edit",
+            "film-edit"
+        ],
         "tags": [
             "Video \/ Movie",
             "Edit \/ Modify"
@@ -42221,7 +43925,11 @@
         "id": "16912257-3D89-4630-9CC5-1FB0EB4A112C",
         "name": "movie-edit-outline",
         "codepoint": "F1123",
-        "aliases": [],
+        "aliases": [
+            "slate-edit-outline",
+            "clapperboard-edit-outline",
+            "film-edit-outline"
+        ],
         "tags": [
             "Video \/ Movie",
             "Edit \/ Modify"
@@ -42328,6 +44036,30 @@
         "tags": [],
         "author": "frankgrinaert",
         "version": "4.5.95"
+    },
+    {
+        "id": "27842852-CDEB-4575-AAEB-D7F15F0928F8",
+        "name": "mower",
+        "codepoint": "F166F",
+        "aliases": [],
+        "tags": [
+            "Hardware \/ Tools",
+            "Home Automation"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "1AF71C6B-087D-493D-81B4-8BDD6A07B2ED",
+        "name": "mower-bag",
+        "codepoint": "F1670",
+        "aliases": [],
+        "tags": [
+            "Hardware \/ Tools",
+            "Home Automation"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "730FEADE-1281-422D-9E31-9DF7D06AD4E3",
@@ -42987,7 +44719,8 @@
             "medicine",
             "shot",
             "drug",
-            "immunization"
+            "immunization",
+            "pharmaceutical"
         ],
         "tags": [
             "Medical \/ Hospital"
@@ -43430,6 +45163,24 @@
         "version": "1.5.54"
     },
     {
+        "id": "5F9984C8-D7D1-42A8-9167-52B0B849CF22",
+        "name": "note-minus",
+        "codepoint": "F164F",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "244AEF5D-38E8-42E6-9C4F-8D4AFF831651",
+        "name": "note-minus-outline",
+        "codepoint": "F1650",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "0A0E42BA-FE9D-44C6-BF6A-D29D6013F2E0",
         "name": "note-multiple",
         "codepoint": "F06B8",
@@ -43483,6 +45234,42 @@
         "tags": [],
         "author": "Austin Andrews",
         "version": "1.5.54"
+    },
+    {
+        "id": "948C92D0-A16F-48FD-8A25-37898D6B9768",
+        "name": "note-remove",
+        "codepoint": "F1651",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "4F471FC1-C060-4081-9866-21830957AE90",
+        "name": "note-remove-outline",
+        "codepoint": "F1652",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "D914BB12-8F9A-4B71-86A0-DA016AA91B90",
+        "name": "note-search",
+        "codepoint": "F1653",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "FAA55692-47B7-492B-897A-9225E7F0C766",
+        "name": "note-search-outline",
+        "codepoint": "F1654",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "2ADC4253-F51B-4BC2-B04C-0DDD139425CF",
@@ -44971,7 +46758,9 @@
         "id": "5E3C88DE-A208-471A-9096-7C7868CC957C",
         "name": "octagon",
         "codepoint": "F03C3",
-        "aliases": [],
+        "aliases": [
+            "stop"
+        ],
         "tags": [
             "Shape",
             "Transportation + Road"
@@ -44983,7 +46772,9 @@
         "id": "3CF63E10-42E7-4E13-8BFF-10E9257953AB",
         "name": "octagon-outline",
         "codepoint": "F03C4",
-        "aliases": [],
+        "aliases": [
+            "stop-outline"
+        ],
         "tags": [
             "Shape",
             "Transportation + Road"
@@ -46170,7 +47961,9 @@
         "id": "D0A95719-9B9F-4E86-A6E5-8013C1A6D4A7",
         "name": "pause-octagon",
         "codepoint": "F03E7",
-        "aliases": [],
+        "aliases": [
+            "stop-pause"
+        ],
         "tags": [],
         "author": "Austin Andrews",
         "version": "1.5.54"
@@ -46179,7 +47972,9 @@
         "id": "95AA0ED2-4221-4123-B3BF-9FACF3702CA4",
         "name": "pause-octagon-outline",
         "codepoint": "F03E8",
-        "aliases": [],
+        "aliases": [
+            "stop-pause-outline"
+        ],
         "tags": [],
         "author": "Austin Andrews",
         "version": "1.5.54"
@@ -46208,6 +48003,28 @@
         ],
         "author": "Simran",
         "version": "1.6.50"
+    },
+    {
+        "id": "EADDFE7F-B2A0-40AD-B060-555080D02BCB",
+        "name": "paw-off-outline",
+        "codepoint": "F1676",
+        "aliases": [],
+        "tags": [
+            "Animal"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "C0FB173F-3D34-4DC2-9D54-C82BEE350FFB",
+        "name": "paw-outline",
+        "codepoint": "F1675",
+        "aliases": [],
+        "tags": [
+            "Animal"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "088F07BD-BEA9-46D5-A2DF-0B9FA37BBF99",
@@ -46596,6 +48413,15 @@
         "version": "1.8.36"
     },
     {
+        "id": "EA9C6D1A-79AE-4114-9AF6-59A2A39FC8DF",
+        "name": "pentagram",
+        "codepoint": "F1667",
+        "aliases": [],
+        "tags": [],
+        "author": "Austin Andrews",
+        "version": "5.7.55"
+    },
+    {
         "id": "3AB307BF-41D9-4CA4-9D44-58C82304C7BB",
         "name": "percent",
         "codepoint": "F03F0",
@@ -46658,7 +48484,9 @@
         "codepoint": "F03F1",
         "aliases": [
             "chemist",
-            "local-pharmacy"
+            "local-pharmacy",
+            "mortar-pestle",
+            "pharmaceutical"
         ],
         "tags": [
             "Medical \/ Hospital"
@@ -47404,6 +49232,15 @@
         "version": "4.0.96"
     },
     {
+        "id": "04A432B2-ABA5-49D7-9650-D6518D5D0A94",
+        "name": "pig-variant-outline",
+        "codepoint": "F1678",
+        "aliases": [],
+        "tags": [],
+        "author": "Michael Irigoyen",
+        "version": "5.7.55"
+    },
+    {
         "id": "7168E9C8-32AE-4E0F-B3A4-EA05452C63C0",
         "name": "piggy-bank",
         "codepoint": "F1007",
@@ -47415,13 +49252,25 @@
         "version": "4.0.96"
     },
     {
+        "id": "37D67BA6-70A1-44C4-9C62-0647BBB7CDA2",
+        "name": "piggy-bank-outline",
+        "codepoint": "F1679",
+        "aliases": [],
+        "tags": [
+            "Banking"
+        ],
+        "author": "Contributors",
+        "version": "5.7.55"
+    },
+    {
         "id": "6487E4ED-C501-416C-9DCE-1B7C1F676050",
         "name": "pill",
         "codepoint": "F0402",
         "aliases": [
             "medicine",
             "capsule",
-            "drug"
+            "drug",
+            "pharmaceutical"
         ],
         "tags": [
             "Medical \/ Hospital"
@@ -48187,7 +50036,10 @@
         "id": "D73F724D-EEE6-43EC-BA3A-E185ABD7A258",
         "name": "poker-chip",
         "codepoint": "F0830",
-        "aliases": [],
+        "aliases": [
+            "casino-chip",
+            "gambling-chip"
+        ],
         "tags": [
             "Gaming \/ RPG"
         ],
@@ -50992,6 +52844,78 @@
         "version": "1.7.12"
     },
     {
+        "id": "D77B4057-E06B-49B7-BBC7-DD4A7B39BC2A",
+        "name": "robot-angry",
+        "codepoint": "F169D",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "D922E043-E4B6-4FAA-9717-51C1935DD20A",
+        "name": "robot-angry-outline",
+        "codepoint": "F169E",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "535C4A09-5555-45A6-8409-BF12E1CDA2DE",
+        "name": "robot-confused",
+        "codepoint": "F169F",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "8361794A-9B3E-44CA-9AA4-EA842227D7C2",
+        "name": "robot-confused-outline",
+        "codepoint": "F16A0",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "04405E02-7C38-409E-8F92-785431ECC76F",
+        "name": "robot-dead",
+        "codepoint": "F16A1",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "15D146E0-3683-43D8-8500-905EEAC98010",
+        "name": "robot-dead-outline",
+        "codepoint": "F16A2",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "B32D5968-FE0C-46FB-916E-52D0103DA2C7",
+        "name": "robot-excited",
+        "codepoint": "F16A3",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "8013E3FE-34B6-49F3-919B-85A5E0A5873C",
+        "name": "robot-excited-outline",
+        "codepoint": "F16A4",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "C008FBCE-4D0A-4003-8811-FF15D08C3313",
         "name": "robot-industrial",
         "codepoint": "F0B46",
@@ -51002,6 +52926,24 @@
         "tags": [],
         "author": "Michael Richins",
         "version": "2.8.94"
+    },
+    {
+        "id": "2EFA6B95-27BD-4A52-90AF-991A3574FD2C",
+        "name": "robot-love",
+        "codepoint": "F16A5",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "FA128C47-3C41-4B0D-8F18-8E28E9F3EA0C",
+        "name": "robot-love-outline",
+        "codepoint": "F16A6",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "2029DE02-EC25-4242-945F-D7495F35D071",
@@ -51028,6 +52970,33 @@
         ],
         "author": "Contributors",
         "version": "4.5.95"
+    },
+    {
+        "id": "B62D8FF2-AF07-4D20-8C8B-93E585EF6EFB",
+        "name": "robot-off",
+        "codepoint": "F16A7",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "0BA0757D-0E1F-4484-86AF-7476790AE21C",
+        "name": "robot-off-outline",
+        "codepoint": "F167B",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "C0F3E15B-2DFB-4EAF-B41A-2D18EEA22C25",
+        "name": "robot-outline",
+        "codepoint": "F167A",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "E091C285-7AA8-4907-9398-EBFDAC7A179D",
@@ -51891,7 +53860,9 @@
             "graduation-cap",
             "university",
             "college",
-            "academic-cap"
+            "academic-cap",
+            "education",
+            "learn"
         ],
         "tags": [],
         "author": "Google",
@@ -51905,7 +53876,9 @@
             "academic-cap-outline",
             "college-outline",
             "graduation-cap-outline",
-            "university-outline"
+            "university-outline",
+            "education-outline",
+            "learn-outline"
         ],
         "tags": [],
         "author": "Google",
@@ -53200,6 +55173,28 @@
         "tags": [],
         "author": "Michael Irigoyen",
         "version": "5.4.55"
+    },
+    {
+        "id": "7A618386-2E3E-4B23-BF63-184B76C9CF61",
+        "name": "shark-fin",
+        "codepoint": "F1673",
+        "aliases": [],
+        "tags": [
+            "Animal"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "15736C41-B312-436C-B081-67F0C561A97A",
+        "name": "shark-fin-outline",
+        "codepoint": "F1674",
+        "aliases": [],
+        "tags": [
+            "Animal"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "DEA01DF4-6FBD-45B7-AC58-CBF70545FBBA",
@@ -54961,7 +56956,10 @@
         "id": "8DAEB736-3A62-475D-81A5-47BD881EA912",
         "name": "slot-machine",
         "codepoint": "F1114",
-        "aliases": [],
+        "aliases": [
+            "casino",
+            "gambling"
+        ],
         "tags": [],
         "author": "Michael Irigoyen",
         "version": "4.3.95"
@@ -54970,7 +56968,10 @@
         "id": "5A083823-77FD-4C5E-98B8-EF320E8493CD",
         "name": "slot-machine-outline",
         "codepoint": "F1115",
-        "aliases": [],
+        "aliases": [
+            "casino-outline",
+            "gambling-outline"
+        ],
         "tags": [],
         "author": "Michael Irigoyen",
         "version": "4.3.95"
@@ -55088,6 +57089,17 @@
         "tags": [],
         "author": "Michael Irigoyen",
         "version": "5.2.45"
+    },
+    {
+        "id": "529CCAF2-D35F-4A40-BEF2-213159AE5DD9",
+        "name": "snail",
+        "codepoint": "F1677",
+        "aliases": [],
+        "tags": [
+            "Animal"
+        ],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "C525609F-8CAF-40A8-A3FC-724F6C699E0A",
@@ -56659,6 +58671,24 @@
         "version": "2.4.85"
     },
     {
+        "id": "82407F8C-2E0B-4F79-9409-0C267A248470",
+        "name": "star-cog",
+        "codepoint": "F1668",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "D1100539-0788-4C74-AD03-8C5F8383DF2E",
+        "name": "star-cog-outline",
+        "codepoint": "F1669",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
         "id": "20FBE06D-72C3-4E1C-945D-C7E69DC0736D",
         "name": "star-face",
         "codepoint": "F09A5",
@@ -56807,6 +58837,24 @@
         ],
         "author": "Michael Irigoyen",
         "version": "5.5.55"
+    },
+    {
+        "id": "30D8C8F6-3BDE-40B8-A015-6E607C370360",
+        "name": "star-settings",
+        "codepoint": "F166A",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
+    },
+    {
+        "id": "AA6C9E76-AC9C-4373-8AC4-F5C706741FC9",
+        "name": "star-settings-outline",
+        "codepoint": "F166B",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.7.55"
     },
     {
         "id": "815B35DE-0C4D-46AD-90EC-2AFEE0A5FC17",
@@ -57140,6 +59188,15 @@
         "version": "1.5.54"
     },
     {
+        "id": "D52803B6-8580-4C06-AA9F-96B4748286DB",
+        "name": "store-minus",
+        "codepoint": "F165E",
+        "aliases": [],
+        "tags": [],
+        "author": "Contributors",
+        "version": "5.7.55"
+    },
+    {
         "id": "6BF9FB77-DF50-40B5-9A93-43E2A22E8633",
         "name": "store-outline",
         "codepoint": "F1361",
@@ -57153,6 +59210,24 @@
         ],
         "author": "Google",
         "version": "4.9.95"
+    },
+    {
+        "id": "00DB5451-A5BF-4F9C-AC74-041916EACCB6",
+        "name": "store-plus",
+        "codepoint": "F165F",
+        "aliases": [],
+        "tags": [],
+        "author": "Contributors",
+        "version": "5.7.55"
+    },
+    {
+        "id": "FB5C0EA4-DAA2-4415-856F-2A4E6FA78BA5",
+        "name": "store-remove",
+        "codepoint": "F1660",
+        "aliases": [],
+        "tags": [],
+        "author": "Contributors",
+        "version": "5.7.55"
     },
     {
         "id": "8ABE8FB2-F704-4095-9E65-F614F86FCE99",
@@ -58586,6 +60661,15 @@
         "version": "4.0.96"
     },
     {
+        "id": "76B2D13C-4AA4-4AA1-A0CA-F4E5CA53FFE2",
+        "name": "tape-drive",
+        "codepoint": "F16DF",
+        "aliases": [],
+        "tags": [],
+        "author": "Contributors",
+        "version": "5.8.55"
+    },
+    {
         "id": "C9C3F657-65A6-418E-91EF-E6FD8F0357C1",
         "name": "tape-measure",
         "codepoint": "F0B4D",
@@ -59314,7 +61398,9 @@
         "id": "F41863ED-B66A-4FF4-B436-0876C8D3665B",
         "name": "thermometer",
         "codepoint": "F050F",
-        "aliases": [],
+        "aliases": [
+            "temperature"
+        ],
         "tags": [
             "Weather",
             "Home Automation",
@@ -59328,7 +61414,9 @@
         "name": "thermometer-alert",
         "codepoint": "F0E01",
         "aliases": [
-            "thermometer-warning"
+            "thermometer-warning",
+            "temperature-alert",
+            "temperature-warning"
         ],
         "tags": [
             "Home Automation",
@@ -59342,7 +61430,11 @@
         "id": "C888E2C1-306A-4BCB-821E-5B33AC93572D",
         "name": "thermometer-chevron-down",
         "codepoint": "F0E02",
-        "aliases": [],
+        "aliases": [
+            "temperature-chevron-down",
+            "temperature-decrease",
+            "thermometer-decrease"
+        ],
         "tags": [
             "Home Automation",
             "Weather"
@@ -59354,7 +61446,11 @@
         "id": "79E7C071-7AEE-48B1-802E-922925E94247",
         "name": "thermometer-chevron-up",
         "codepoint": "F0E03",
-        "aliases": [],
+        "aliases": [
+            "temperature-chevron-up",
+            "temperature-increase",
+            "thermometer-increase"
+        ],
         "tags": [
             "Home Automation",
             "Weather"
@@ -59366,7 +61462,9 @@
         "id": "DF51BF5D-831D-4FD1-8786-498CAC97DBB6",
         "name": "thermometer-high",
         "codepoint": "F10C2",
-        "aliases": [],
+        "aliases": [
+            "temperature-high"
+        ],
         "tags": [
             "Home Automation",
             "Weather"
@@ -59378,7 +61476,9 @@
         "id": "A9FC898C-8CC5-44F2-822D-05C5625E95C8",
         "name": "thermometer-lines",
         "codepoint": "F0510",
-        "aliases": [],
+        "aliases": [
+            "temperature-lines"
+        ],
         "tags": [
             "Weather",
             "Home Automation"
@@ -59390,7 +61490,9 @@
         "id": "DBD8C754-85C4-43C4-BEA8-BCFEDB30B382",
         "name": "thermometer-low",
         "codepoint": "F10C3",
-        "aliases": [],
+        "aliases": [
+            "temperature-low"
+        ],
         "tags": [
             "Home Automation",
             "Weather"
@@ -59402,7 +61504,11 @@
         "id": "310F50E9-D74E-4753-A6D8-60EDBFC332B7",
         "name": "thermometer-minus",
         "codepoint": "F0E04",
-        "aliases": [],
+        "aliases": [
+            "temperature-minus",
+            "thermometer-decrease",
+            "temperature-decrease"
+        ],
         "tags": [
             "Home Automation",
             "Weather"
@@ -59414,7 +61520,9 @@
         "id": "BF73A396-DB1C-46BC-8078-3CF0D7E0277F",
         "name": "thermometer-off",
         "codepoint": "F1531",
-        "aliases": [],
+        "aliases": [
+            "temperature-off"
+        ],
         "tags": [
             "Weather"
         ],
@@ -59426,7 +61534,11 @@
         "name": "thermometer-plus",
         "codepoint": "F0E05",
         "aliases": [
-            "thermometer-add"
+            "thermometer-add",
+            "thermometer-increase",
+            "temperature-plus",
+            "temperature-add",
+            "temperature-increase"
         ],
         "tags": [
             "Home Automation",
@@ -64975,6 +67087,132 @@
         "version": "1.5.54"
     },
     {
+        "id": "9B9FF835-20F9-49BD-A11F-403786BC42A2",
+        "name": "wifi-alert",
+        "codepoint": "F16B5",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "8778FE48-83F3-484D-A1DE-C12000DB3170",
+        "name": "wifi-arrow-down",
+        "codepoint": "F16B6",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "79955442-BBC4-4B1D-84EE-69990BF30331",
+        "name": "wifi-arrow-left",
+        "codepoint": "F16B7",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "BD5239F0-5659-4E99-9860-F28D58BDF788",
+        "name": "wifi-arrow-left-right",
+        "codepoint": "F16B8",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "F245A78A-C6F3-45CF-B4C0-131280576715",
+        "name": "wifi-arrow-right",
+        "codepoint": "F16B9",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "20394D81-3E4C-4963-88C7-BB015ECA8D72",
+        "name": "wifi-arrow-up",
+        "codepoint": "F16BA",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "EE028441-38B6-40F9-B3E8-C673241BD39D",
+        "name": "wifi-arrow-up-down",
+        "codepoint": "F16BB",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "06F860BA-78F4-4F9C-8A90-E6ABEF1FA064",
+        "name": "wifi-cancel",
+        "codepoint": "F16BC",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "41D2061C-CFC9-4686-B916-4BEC07AB1553",
+        "name": "wifi-check",
+        "codepoint": "F16BD",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "17572DB9-20E6-4B83-A6B8-C66282523BC8",
+        "name": "wifi-cog",
+        "codepoint": "F16BE",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "3E5F6D19-E6C7-48BD-990F-C7D10598B2F7",
+        "name": "wifi-lock",
+        "codepoint": "F16BF",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "F9450F5D-FCF2-4E89-B234-FDA2F72C6B18",
+        "name": "wifi-lock-open",
+        "codepoint": "F16C0",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "A6FB83C2-13FE-4B23-AE9B-7F2696CA2835",
+        "name": "wifi-marker",
+        "codepoint": "F16C1",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "DFEC628C-E105-456D-8F73-71F54116DBC2",
+        "name": "wifi-minus",
+        "codepoint": "F16C2",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "A7CAE187-B853-41DD-9D8D-FB9A28C3F764",
         "name": "wifi-off",
         "codepoint": "F05AA",
@@ -64982,6 +67220,42 @@
         "tags": [],
         "author": "Simran",
         "version": "1.5.54"
+    },
+    {
+        "id": "3CF89702-EA3B-48A1-9B5E-5188A80DCBA8",
+        "name": "wifi-plus",
+        "codepoint": "F16C3",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "540437B4-6901-4F18-A60F-CAA10FD74B49",
+        "name": "wifi-refresh",
+        "codepoint": "F16C4",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "5989CC44-8A90-4D17-ADB8-F7AC12A0CF4E",
+        "name": "wifi-remove",
+        "codepoint": "F16C5",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
+        "id": "BA9356E6-E4D6-4A64-923C-395114E0DBE3",
+        "name": "wifi-settings",
+        "codepoint": "F16C6",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "30694858-4607-48C1-A533-861E4968A0CE",
@@ -65029,6 +67303,15 @@
         "version": "2.3.50"
     },
     {
+        "id": "91890A07-398B-41A0-B91C-647C7BE9F5DA",
+        "name": "wifi-strength-1-lock-open",
+        "codepoint": "F16CB",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "92D075FB-99D3-4926-A4E9-F25EAB70E78E",
         "name": "wifi-strength-2",
         "codepoint": "F0922",
@@ -65060,6 +67343,15 @@
         ],
         "author": "Simran",
         "version": "2.3.50"
+    },
+    {
+        "id": "22E5DDDA-12A4-4087-B1FF-5C3E8807CE0B",
+        "name": "wifi-strength-2-lock-open",
+        "codepoint": "F16CC",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "736B9B99-3A60-4BCA-A79A-40DE34D17F43",
@@ -65095,6 +67387,15 @@
         "version": "2.3.50"
     },
     {
+        "id": "249BF1E5-B9AC-47D6-9FC4-72678EE933C4",
+        "name": "wifi-strength-3-lock-open",
+        "codepoint": "F16CD",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "41B86B22-7245-4A97-9BAA-3E9EBD44CEB0",
         "name": "wifi-strength-4",
         "codepoint": "F0928",
@@ -65128,6 +67429,15 @@
         "version": "2.3.50"
     },
     {
+        "id": "332A10AE-2396-460B-819F-7149D0BE4085",
+        "name": "wifi-strength-4-lock-open",
+        "codepoint": "F16CE",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
+    },
+    {
         "id": "50E531C4-A82A-4F0C-A8BB-A2208B546E81",
         "name": "wifi-strength-alert-outline",
         "codepoint": "F092B",
@@ -65141,6 +67451,15 @@
         ],
         "author": "Simran",
         "version": "2.3.50"
+    },
+    {
+        "id": "40B4EE9D-5DA4-428C-BEF3-C75FD6740CA3",
+        "name": "wifi-strength-lock-open-outline",
+        "codepoint": "F16CF",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "718740BB-FC95-47E4-856B-0A469966C8DD",
@@ -65183,6 +67502,15 @@
         "tags": [],
         "author": "Simran",
         "version": "2.3.50"
+    },
+    {
+        "id": "73D9D138-DCB0-4CA7-9AB9-5C3BCB4D2165",
+        "name": "wifi-sync",
+        "codepoint": "F16C7",
+        "aliases": [],
+        "tags": [],
+        "author": "Colton Wiscombe",
+        "version": "5.8.55"
     },
     {
         "id": "19DE621D-F082-42B5-9FD3-FEF8D84A2BB9",
