@@ -27,7 +27,7 @@
             </div>
 
             <!-- Icon details -->
-            <div>
+            <div style="width: 100%;">
               <!-- Icon name -->
               <header class="d-flex justify-space-between">
                 <div class="text-h6 secondary--text">{{ pickedIcon.name }}</div>
