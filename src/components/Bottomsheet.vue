@@ -62,7 +62,7 @@
                     </v-list-item-content>
                   </v-list-item>
 
-                  <v-list-item :link="true">
+                  <v-list-item :link="true" @click="copyName()">
                     <v-list-item-icon>
                       <v-icon>mdi-pencil-outline</v-icon>
                     </v-list-item-icon>
@@ -118,6 +118,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import Color from '@/components/Color.vue';
+import clipboardCopy from '../plugins/clipboardCopy';
 
 export default Vue.extend({
   name: 'Bottomsheet',
@@ -148,6 +149,9 @@ export default Vue.extend({
     },
     openMDI() {
       window.open(`https://materialdesignicons.com/icon/${this.icon.name}`, '_blank');
+    },
+    copyName() {
+      clipboardCopy(this.icon.name);
     },
   },
 });
