@@ -1,122 +1,6 @@
 <template>
-  <v-row>
-    <div tabindex="-1" class="v-dialog__content v-dialog__content--active">
-      <transition name="bottom-sheet-transition">
-        <div
-          class="
-            iconslist
-            background
-            pa-4 ma-5
-            v-dialog v-bottom-sheet v-dialog--active v-dialog--persistent
-          "
-          v-if="sheet"
-        >
-          <article class="d-flex">
-            <!-- Icon preview -->
-            <div class="pa-5">
-              <v-icon size="76" :color="iconColor">{{ `mdi-${pickedIcon.name}` }}</v-icon>
-
-              <div class="mt-2 colors">
-                <Color
-                  v-for="(color, i) in colors"
-                  :key="i"
-                  :color="color"
-                  @picked="selectColor"
-                />
-              </div>
-            </div>
-
-            <!-- Icon details -->
-            <div style="width: 100%;">
-              <!-- Icon name -->
-              <header class="d-flex justify-space-between">
-                <div class="text-h6 secondary--text">{{ pickedIcon.name }}</div>
-                <v-menu
-                  transition="slide-y-transition"
-                  nudge-bottom="20"
-                  :close-on-content-click="true"
-                >
-                  <template v-slot:activator="{ on, attrs }">
-                    <v-btn
-                      icon
-                      v-bind="attrs"
-                      v-on="on"
-                    >
-                      <v-icon>mdi-dots-vertical</v-icon>
-                    </v-btn>
-                  </template>
-                  <v-list dense style="padding: 3px;">
-                    <v-list-item :link="true">
-                      <v-list-item-icon>
-                        <v-icon>mdi-link-variant</v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title>Show on MDI</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-
-                    <v-list-item :link="true">
-                      <v-list-item-icon>
-                        <v-icon>mdi-code-tags</v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title>Copy import code</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-
-                    <v-list-item :link="true">
-                      <v-list-item-icon>
-                        <v-icon>mdi-pencil-outline</v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title>Copy name</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list>
-                </v-menu>
-              </header>
-
-              <main>
-                <!-- Icon code -->
-                <prism
-                  language="javascript"
-                  :code="`import { mdi${formatNameToCode(pickedIcon.name)} } from '@mdi/js';`"
-                  :style="$vuetify.theme.dark ? 'background-color: #101010;' : ''"
-                ></prism>
-
-                <!-- Icon buttons -->
-                <div class="mb-2">
-                  <!-- Button: Visit MDI -->
-                  <v-btn
-                    :href="`https://materialdesignicons.com/icon/${pickedIcon.name}`"
-                    elevation="0"
-                    target="_blank"
-                    class="mr-2"
-                    text
-                    color="secondary"
-                  >
-                    <span>Visit MDI</span>
-                    <v-icon
-                      class="ml-2"
-                      size="18"
-                      style="opacity: 0.3"
-                    >mdi-open-in-new</v-icon>
-                  </v-btn>
-                </div>
-              </main>
-
-              <!-- Icon footer -->
-              <footer class="text--secondary caption">
-                {{ pickedIcon.codepoint }} ·
-                by {{ pickedIcon.author }} (v{{ pickedIcon.version }})
-              </footer>
-            </div>
-          </article>
-        </div>
-      </transition>
-    </div>
-
     <v-row>
+      <Bottomsheet v-if="sheet" :icon="pickedIcon" />
       <Icon
         v-for="(icon, i) in getIconsList(this.search)"
         :key="i"
@@ -124,13 +8,12 @@
         @clicked="pickIcon(icon)"
       />
     </v-row>
-  </v-row>
 </template>
 
 <script lang="ts">
 import '@/assets/prism.css';
+import Bottomsheet from '@/components/Bottomsheet.vue';
 import Icon from '@/components/Icon.vue';
-import Color from '@/components/Color.vue';
 import Vue from 'vue';
 import searchArray from 'search-in-array';
 import eventBus from '../plugins/eventBus';
@@ -140,8 +23,8 @@ export default Vue.extend({
   name: 'IconsList',
 
   components: {
+    Bottomsheet,
     Icon,
-    Color,
   },
 
   data: () => ({
@@ -150,8 +33,6 @@ export default Vue.extend({
     sheet: false,
     outlineOnly: false,
     search: '',
-    iconColor: 'secondary',
-    colors: ['red', 'light-green', 'light-blue', 'white', 'grey darken-3'],
   }),
 
   methods: {
@@ -160,10 +41,6 @@ export default Vue.extend({
 
       // Show bottom sheet
       this.sheet = true;
-    },
-    formatNameToCode(name: string) {
-      // Remove dashes and start each word with a capital letter
-      return name.split('-').map((text) => text.charAt(0).toUpperCase() + text.slice(1)).join('');
     },
     getRandomInt(paramMin: number, paramMax: number) {
       const min = Math.ceil(paramMin);
@@ -200,9 +77,6 @@ export default Vue.extend({
           this.iconsCount += 50;
         }
       };
-    },
-    selectColor(color: string) {
-      this.iconColor = color;
     },
   },
 
@@ -245,22 +119,5 @@ export default Vue.extend({
   &:hover {
     opacity: 1;
   }
-}
-
-.iconslist {
-  box-shadow: 0 0 150px var(--v-background-base);
-  border-radius: 5px !important;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  @media (min-width: 1256px) {
-    width: 50vw;
-  }
-}
-
-.v-dialog__content {
-  display: flex;
-  justify-content: flex-start;
 }
 </style>
