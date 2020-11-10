@@ -29,8 +29,51 @@
             <!-- Icon details -->
             <div>
               <!-- Icon name -->
-              <header class="text-h6 secondary--text">
-                {{ pickedIcon.name }}
+              <header class="d-flex justify-space-between">
+                <div class="text-h6 secondary--text">{{ pickedIcon.name }}</div>
+                <v-menu
+                  transition="slide-y-transition"
+                  nudge-bottom="20"
+                  :close-on-content-click="true"
+                >
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn
+                      icon
+                      v-bind="attrs"
+                      v-on="on"
+                    >
+                      <v-icon>mdi-dots-vertical</v-icon>
+                    </v-btn>
+                  </template>
+                  <v-list dense style="padding: 3px;">
+                    <v-list-item :link="true">
+                      <v-list-item-icon>
+                        <v-icon>mdi-link-variant</v-icon>
+                      </v-list-item-icon>
+                      <v-list-item-content>
+                        <v-list-item-title>Show on MDI</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+
+                    <v-list-item :link="true">
+                      <v-list-item-icon>
+                        <v-icon>mdi-code-tags</v-icon>
+                      </v-list-item-icon>
+                      <v-list-item-content>
+                        <v-list-item-title>Copy import code</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+
+                    <v-list-item :link="true">
+                      <v-list-item-icon>
+                        <v-icon>mdi-pencil-outline</v-icon>
+                      </v-list-item-icon>
+                      <v-list-item-content>
+                        <v-list-item-title>Copy name</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
               </header>
 
               <main>
