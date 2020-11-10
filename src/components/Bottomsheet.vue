@@ -44,7 +44,7 @@
                   </v-btn>
                 </template>
                 <v-list dense style="padding: 3px;">
-                  <v-list-item :link="true">
+                  <v-list-item :link="true" @click="openMDI()">
                     <v-list-item-icon>
                       <v-icon>mdi-link-variant</v-icon>
                     </v-list-item-icon>
@@ -145,6 +145,9 @@ export default Vue.extend({
     },
     selectColor(color: string) {
       this.iconColor = color;
+    },
+    openMDI() {
+      window.open(`https://materialdesignicons.com/icon/${this.icon.name}`, '_blank');
     },
   },
 });
