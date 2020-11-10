@@ -53,6 +53,15 @@
                     </v-list-item-content>
                   </v-list-item>
 
+                  <v-list-item :link="true" @click="copyName()">
+                    <v-list-item-icon>
+                      <v-icon>mdi-pencil-outline</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                      <v-list-item-title>Copy icon name</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+
                   <v-list-item :link="true" @click="copyCode()">
                     <v-list-item-icon>
                       <v-icon>mdi-code-tags</v-icon>
@@ -62,12 +71,12 @@
                     </v-list-item-content>
                   </v-list-item>
 
-                  <v-list-item :link="true" @click="copyName()">
+                  <v-list-item :link="true" @click="copyCodepoint()">
                     <v-list-item-icon>
-                      <v-icon>mdi-pencil-outline</v-icon>
+                      <v-icon>mdi-code-braces</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
-                      <v-list-item-title>Copy icon name</v-list-item-title>
+                      <v-list-item-title>Copy codepoint</v-list-item-title>
                     </v-list-item-content>
                   </v-list-item>
                 </v-list>
@@ -81,26 +90,6 @@
                 :code="`import { mdi${formatNameToCode(icon.name)} } from '@mdi/js';`"
                 :style="$vuetify.theme.dark ? 'background-color: #101010;' : ''"
               ></prism>
-
-              <!-- Icon buttons -->
-              <div class="mb-2">
-                <!-- Button: Visit MDI -->
-                <v-btn
-                  :href="`https://materialdesignicons.com/icon/${icon.name}`"
-                  elevation="0"
-                  target="_blank"
-                  class="mr-2"
-                  text
-                  color="secondary"
-                >
-                  <span>Visit MDI</span>
-                  <v-icon
-                    class="ml-2"
-                    size="18"
-                    style="opacity: 0.3"
-                  >mdi-open-in-new</v-icon>
-                </v-btn>
-              </div>
             </main>
 
             <!-- Icon footer -->
@@ -155,6 +144,9 @@ export default Vue.extend({
     },
     copyCode() {
       clipboardCopy(`import { mdi${this.formatNameToCode(this.icon.name)} } from '@mdi/js';`);
+    },
+    copyCodepoint() {
+      clipboardCopy(this.icon.codepoint);
     },
   },
 });
