@@ -9,7 +9,7 @@
           v-dialog v-bottom-sheet v-dialog--active v-dialog--persistent
         "
       >
-        <article class="d-flex justify-space-between">
+        <article class="d-flex justify-space-between align-center">
           <!-- Icon preview -->
           <div class="pa-5 text-center">
             <v-icon size="76" :color="iconColor">{{ `mdi-${icon.name}` }}</v-icon>
