@@ -9,9 +9,9 @@
           v-dialog v-bottom-sheet v-dialog--active v-dialog--persistent
         "
       >
-        <article class="d-flex">
+        <article class="d-flex justify-space-between">
           <!-- Icon preview -->
-          <div class="pa-5">
+          <div class="pa-5 text-center">
             <v-icon size="76" :color="iconColor">{{ `mdi-${icon.name}` }}</v-icon>
 
             <div class="mt-2 colors">
@@ -25,7 +25,7 @@
           </div>
 
           <!-- Icon details -->
-          <div style="width: 100%;">
+          <div style="width: 76%;">
             <!-- Icon name -->
             <header class="d-flex justify-space-between">
               <div class="text-h6 secondary--text">{{ icon.name }}</div>
@@ -67,7 +67,7 @@
                       <v-icon>mdi-pencil-outline</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
-                      <v-list-item-title>Copy name</v-list-item-title>
+                      <v-list-item-title>Copy icon name</v-list-item-title>
                     </v-list-item-content>
                   </v-list-item>
                 </v-list>
