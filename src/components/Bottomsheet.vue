@@ -83,7 +83,7 @@
               </v-menu>
             </header>
 
-            <main>
+            <main class="my-2">
               <!-- Icon code -->
               <prism
                 language="javascript"
@@ -93,9 +93,8 @@
             </main>
 
             <!-- Icon footer -->
-            <footer class="text--secondary caption">
-              {{ icon.codepoint }} ·
-              by {{ icon.author }} (v{{ icon.version }})
+            <footer class="text--disabled" style="font-size: 14px;">
+              Author: {{ icon.author }} (v{{ icon.version }})
             </footer>
           </div>
         </article>
