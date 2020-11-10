@@ -53,7 +53,7 @@
                     </v-list-item-content>
                   </v-list-item>
 
-                  <v-list-item :link="true">
+                  <v-list-item :link="true" @click="copyCode()">
                     <v-list-item-icon>
                       <v-icon>mdi-code-tags</v-icon>
                     </v-list-item-icon>
@@ -152,6 +152,9 @@ export default Vue.extend({
     },
     copyName() {
       clipboardCopy(this.icon.name);
+    },
+    copyCode() {
+      clipboardCopy(`import { mdi${this.formatNameToCode(this.icon.name)} } from '@mdi/js';`);
     },
   },
 });
