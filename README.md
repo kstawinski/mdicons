@@ -36,5 +36,11 @@ npm run serve
 npm run build
 ```
 
+## Fetch icons list
+```bash
+node scripts/fetchIcons.js
+```
+...then commit changes into your repository.
+
 ### 📝 License
 Check [LICENSE](https://github.com/kstawinski/mdicons/blob/master/LICENSE) file for more informations.
