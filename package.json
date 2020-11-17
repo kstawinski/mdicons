@@ -28,8 +28,10 @@
   "homepage": "https://github.com/kstawinski/mdicons",
   "dependencies": {
     "@aminoeditor/vue-prism": "^1.0.13",
+    "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "prismjs": "^1.21.0",
+    "prompt-confirm": "^2.0.4",
     "search-in-array": "^1.0.3",
     "vue": "^2.6.11",
     "vuetify": "^2.2.11"
