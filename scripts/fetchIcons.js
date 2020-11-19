@@ -18,8 +18,7 @@ const fetchIcons = () => {
 
       // Fetched icons
       const fetchedIcons = response.data;
-
-      if (existingIcons.length < fetchedIcons.length) {
+      if (JSON.stringify(existingIcons).length < JSON.stringify(fetchedIcons).length) {
         new Confirm('Would like to update icons list?')
         .ask((answer) => {
           if (answer === true) {
