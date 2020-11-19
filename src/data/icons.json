@@ -53631,7 +53631,9 @@
         "id": "438888DA-342B-4861-95EA-026A3F4E2F95",
         "name": "safety-goggles",
         "codepoint": "F0D30",
-        "aliases": [],
+        "aliases": [
+            "safety-glasses"
+        ],
         "tags": [
             "Science"
         ],
@@ -63549,7 +63551,8 @@
         "codepoint": "F062E",
         "aliases": [
             "mixer-settings",
-            "equaliser"
+            "equaliser",
+            "settings"
         ],
         "tags": [
             "Settings",
@@ -63562,7 +63565,10 @@
         "id": "B0AFC3B0-B718-407F-A51C-F4D932D7FCB2",
         "name": "tune-variant",
         "codepoint": "F1542",
-        "aliases": [],
+        "aliases": [
+            "settings",
+            "equalizer"
+        ],
         "tags": [
             "Audio"
         ],
@@ -63575,7 +63581,9 @@
         "codepoint": "F066A",
         "aliases": [
             "equaliser-vertical",
-            "instant-mix"
+            "instant-mix",
+            "settings-vertical",
+            "mixer-settings-vertical"
         ],
         "tags": [
             "Settings",
@@ -63588,7 +63596,10 @@
         "id": "FF706504-28DF-4752-BD75-E50FFE794421",
         "name": "tune-vertical-variant",
         "codepoint": "F1543",
-        "aliases": [],
+        "aliases": [
+            "settings-vertical",
+            "equalizer-vertical"
+        ],
         "tags": [
             "Audio"
         ],
