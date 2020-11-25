@@ -24301,7 +24301,9 @@
         "codepoint": "F01E6",
         "aliases": [
             "weights",
-            "fitness-center"
+            "fitness-center",
+            "gym",
+            "barbell"
         ],
         "tags": [
             "Sport"
@@ -33192,7 +33194,11 @@
         "id": "62403C7B-F20E-489B-8835-28F7544D9712",
         "name": "gift",
         "codepoint": "F0E44",
-        "aliases": [],
+        "aliases": [
+            "present",
+            "package",
+            "donate"
+        ],
         "tags": [
             "Holiday"
         ],
@@ -33204,8 +33210,9 @@
         "name": "gift-outline",
         "codepoint": "F02A1",
         "aliases": [
-            "donate",
-            "present"
+            "donate-outline",
+            "present-outline",
+            "package-outline"
         ],
         "tags": [
             "Shopping",
@@ -66943,8 +66950,10 @@
         "name": "weight-lifter",
         "codepoint": "F115D",
         "aliases": [
-            "barbell",
-            "crossfit"
+            "crossfit",
+            "gym",
+            "fitness-center",
+            "human-barbell"
         ],
         "tags": [
             "Sport"
