@@ -1,6 +1,8 @@
 <template>
     <v-row>
-      <Bottomsheet v-if="sheet" :icon="pickedIcon" />
+      <v-slide-y-reverse-transition>
+        <Bottomsheet v-if="sheet" :icon="pickedIcon" />
+      </v-slide-y-reverse-transition>
       <Icon
         v-for="(icon, i) in getIconsList(this.search)"
         :key="i"
