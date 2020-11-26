@@ -48,7 +48,7 @@
           text
           :link="true"
           target="_blank"
-          href="https://github.com/kstawinski/material-design-icons"
+          href="https://github.com/kstawinski/mdicons"
         >
           <v-icon class="mr-2" size="17">mdi-github</v-icon>
           Repository
